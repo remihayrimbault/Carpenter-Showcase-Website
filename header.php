@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rémi Hay--Rimbault">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" />
-    <title><?php bloginfo('name'); ?></title>
-    <?php wp_footer(); ?>
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
@@ -39,4 +38,4 @@
         <nav id="menuprincipal">
             <?php wp_page_menu('show_home=1'); ?>
         </nav>
-    </header> 
+    </header>
