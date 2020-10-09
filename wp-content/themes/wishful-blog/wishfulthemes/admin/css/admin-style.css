@@ -1,0 +1,11 @@
+/*
+Widget at Apperence > widgets
+*/
+
+.widgets-holder-wrap [id*="wishful_blog"] .widget-top {
+
+    background: #fcb811;
+    color: #fff !important;
+    box-shadow: none !important;
+    border: none !important;
+}

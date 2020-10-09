@@ -1,0 +1,975 @@
+# Copyright (C) 2020 wishful-blog
+# This file is distributed under the same license as the wishful-blog package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wishful-blog\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Team <wishfulthemes@gmail.com>\n"
+"Last-Translator: WishfulThemes <wishfulthemes@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://support.wishfulthemes.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../404.php:20
+msgid "404"
+msgstr ""
+
+#: ../404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:22
+msgid "Sorry, but the page you were looking for could not be found."
+msgstr ""
+
+#: ../404.php:23, ../template-parts/content-none.php:37, ../template-parts/content-none.php:49
+msgid "Back Home"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: ../attachment.php:34, ../inc/template-tags.php:308, ../page.php:80, ../template-parts/content.php:60
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: ../comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:83
+msgid "Copyright."
+msgstr ""
+
+#. translators: 1: Copyright Text 2: Theme name, 3: Theme author.
+#: ../footer.php:94
+msgid "%1$s %2$s | %3$s by %4$s"
+msgstr ""
+
+#: ../footer.php:94
+msgid "Wishful Blog"
+msgstr ""
+
+#: ../footer.php:94, ../footer.php:99
+msgid "Wishfulthemes"
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: ../footer.php:99
+msgid "%1$s by %2$s"
+msgstr ""
+
+#: ../functions.php:53
+msgid "Primary"
+msgstr ""
+
+#: ../functions.php:132
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:134, ../functions.php:146
+msgid "Add widgets here for sidebar."
+msgstr ""
+
+#: ../functions.php:144, ../inc/customizer/customizer-theme-options.php:1621
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: ../functions.php:155
+msgid "Homepage Top Widget Area"
+msgstr ""
+
+#: ../functions.php:157
+msgid "Add only homepage post widget here."
+msgstr ""
+
+#: ../functions.php:170
+msgid "Footer Widget Area : Left"
+msgstr ""
+
+#: ../functions.php:172
+msgid "Add widget here for Footer Widget Area : Left."
+msgstr ""
+
+#: ../functions.php:180
+msgid "Footer Widget Area : Middle"
+msgstr ""
+
+#: ../functions.php:182
+msgid "Add widget here for Footer Widget Area : Middle."
+msgstr ""
+
+#: ../functions.php:190
+msgid "Footer Widget Area : Right"
+msgstr ""
+
+#: ../functions.php:192
+msgid "Add widget here for Footer Widget Area : Right."
+msgstr ""
+
+#: ../header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: ../inc/template-functions.php:131
+msgid "Pages:"
+msgstr ""
+
+#: ../inc/template-functions.php:135
+msgid "Next"
+msgstr ""
+
+#: ../inc/template-functions.php:136
+msgid "Previous"
+msgstr ""
+
+#: ../inc/template-functions.php:151
+msgid "Older Comments"
+msgstr ""
+
+#: ../inc/template-functions.php:152
+msgid "Newer Comments"
+msgstr ""
+
+#: ../inc/template-functions.php:153
+msgid "Comments Pagination"
+msgstr ""
+
+#: ../inc/template-functions.php:304
+msgid "Sign Up"
+msgstr ""
+
+#: ../inc/template-functions.php:305
+msgid "Log In"
+msgstr ""
+
+#: ../inc/template-functions.php:306
+msgid "Reset Password"
+msgstr ""
+
+#: ../inc/template-functions.php:307
+msgid "Edit Profile"
+msgstr ""
+
+#: ../inc/template-functions.php:308
+msgid "Log Out"
+msgstr ""
+
+#: ../inc/template-functions.php:362, ../inc/woocommerce-functions.php:30
+msgid "View Cart"
+msgstr ""
+
+#: ../inc/template-functions.php:365, ../inc/woocommerce-functions.php:33
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-functions.php:458
+msgid "right"
+msgstr ""
+
+#: ../inc/template-functions.php:946, ../inc/template-functions.php:951, ../inc/template-functions.php:956, ../template-parts/banner/banner-one.php:52, ../template-parts/banner/banner-two.php:63, ../template-parts/banner/banner-two.php:124
+msgid "Read More"
+msgstr ""
+
+#. translators: %s: post date.
+#: ../inc/template-tags.php:33
+msgctxt "post date"
+msgid "&emsp%s"
+msgstr ""
+
+#. translators: %1$s: category list.
+#: ../inc/template-tags.php:108
+msgid "&nbsp;%1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:131
+msgid "0 Comment"
+msgstr ""
+
+#. translators: %s: comments number.
+#: ../inc/template-tags.php:134
+msgid "%s comment"
+msgstr ""
+
+#. translators: %s: comments number.
+#: ../inc/template-tags.php:138
+msgid "%s comments"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: ../inc/template-tags.php:271
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: ../inc/template-tags.php:274
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: ../inc/template-tags.php:278
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: ../inc/template-tags.php:281
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: ../inc/template-tags.php:291
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
+#: ../inc/theme-functions.php:22
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
+#: ../inc/theme-functions.php:26
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../inc/theme-functions.php:159
+msgid "Enter Keyword"
+msgstr ""
+
+#: ../inc/theme-functions.php:159
+msgid "Search"
+msgstr ""
+
+#: ../inc/theme-functions.php:183
+msgid "Add Menu"
+msgstr ""
+
+#: ../inc/theme-functions.php:298
+msgid "Wishful Blog Pro"
+msgstr ""
+
+#: ../inc/theme-functions.php:299
+msgid "Buy Now"
+msgstr ""
+
+#: ../inc/theme-functions.php:336
+msgid "Banner Layout One"
+msgstr ""
+
+#: ../inc/theme-functions.php:337
+msgid "Banner Layout Two"
+msgstr ""
+
+#: ../inc/theme-functions.php:375
+msgid "Maximum 3 items and minimum 2 items can be set."
+msgstr ""
+
+#: ../inc/theme-functions.php:448
+msgid "Recent Posts"
+msgstr ""
+
+#: ../inc/theme-functions.php:449
+msgid "Popular Posts"
+msgstr ""
+
+#: ../inc/theme-functions.php:468
+msgid "List Layout"
+msgstr ""
+
+#: ../inc/theme-functions.php:469
+msgid "Grid : 2 Column"
+msgstr ""
+
+#: ../inc/theme-functions.php:488, ../inc/theme-functions.php:589
+msgid "Style One"
+msgstr ""
+
+#: ../inc/theme-functions.php:489, ../inc/theme-functions.php:590
+msgid "Style Two"
+msgstr ""
+
+#: ../inc/theme-functions.php:508
+msgid "Fullwidth"
+msgstr ""
+
+#: ../inc/theme-functions.php:509, ../inc/metabox/post-meta.php:58
+msgid "Right"
+msgstr ""
+
+#: ../inc/theme-functions.php:510, ../inc/metabox/post-meta.php:59
+msgid "Left"
+msgstr ""
+
+#: ../inc/theme-functions.php:529, ../inc/customizer/customizer-theme-options.php:860, ../inc/customizer/customizer-theme-options.php:941, ../inc/customizer/customizer-theme-options.php:1060, ../inc/customizer/customizer-theme-options.php:1168, ../inc/customizer/customizer-theme-options.php:1220, ../widgets/homepage-post-widget.php:276, ../widgets/post-widget-layout-one.php:235, ../widgets/post-widget-layout-two.php:238
+msgid "Display Category"
+msgstr ""
+
+#: ../inc/theme-functions.php:530, ../widgets/homepage-post-widget.php:277, ../widgets/post-widget-layout-one.php:236, ../widgets/post-widget-layout-two.php:239
+msgid "Display Comment No."
+msgstr ""
+
+#: ../inc/theme-functions.php:549
+msgid "Light Mode"
+msgstr ""
+
+#: ../inc/theme-functions.php:550
+msgid "Dark Mode"
+msgstr ""
+
+#: ../inc/theme-functions.php:569
+msgid "Standard Format"
+msgstr ""
+
+#: ../inc/theme-functions.php:570
+msgid "Number Format"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:28
+msgid "General Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:41
+msgid "Global Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:53
+msgid "Primary Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:66
+msgid "Menu Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:78
+msgid "Main Menu Link Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:88
+msgid "Main Menu Link Hover Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:98
+msgid "Sub Menu Link Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:108
+msgid "Sub Menu Link Hover Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:118
+msgid "Main Menu Background Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:128
+msgid "Sub Menu Background Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:138
+msgid "Main Menu Border Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:148
+msgid "Sub Menu Border Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:158
+msgid "Responsive : Sub Menu Background Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:171
+msgid "Body Typography"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:184, ../inc/customizer/customizer-theme-options.php:238, ../inc/customizer/customizer-theme-options.php:292
+msgid "Font Family"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:197, ../inc/customizer/customizer-theme-options.php:251, ../inc/customizer/customizer-theme-options.php:305
+msgid "Font Weight"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:210, ../inc/customizer/customizer-theme-options.php:264, ../inc/customizer/customizer-theme-options.php:318
+msgid "Font Size"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:211, ../inc/customizer/customizer-theme-options.php:265, ../inc/customizer/customizer-theme-options.php:319, ../inc/customizer/customizer-theme-options.php:570, ../inc/customizer/customizer-theme-options.php:1487, ../inc/customizer/customizer-theme-options.php:1528
+msgid "You can set font size in pixel or normal. Eg: 24px, 1.3em etc."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:225
+msgid "Post Listing Title Typography"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:279
+msgid "Widget Title Typography"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:333
+msgid "Social Links"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:344, ../widgets/social-widget.php:130
+msgid "Facebook Link"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:356, ../widgets/social-widget.php:137
+msgid "Twitter Link"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:368, ../widgets/social-widget.php:158
+msgid "Pinterest Link"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:380, ../widgets/social-widget.php:151
+msgid "Instagram Link"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:392, ../widgets/social-widget.php:144
+msgid "Youtube Link"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:406
+msgid "Scroll Top"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:417
+msgid "Enable Scroll Top"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:431, ../inc/customizer/customizer-theme-options.php:442
+msgid "Excerpt Length"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:443
+msgid "Excerpt is the short post content. Excerpt length sets the number of words that the excerpt can contain. This is the default excerpt length used for other pages too. Maximum excerpt length 40 and minimum excerpt length 20 can be set."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:460
+msgid "Fallback Image"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:470
+msgid "Enable Fallback Image"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:480
+msgid "Upload Fallback Image"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:493
+msgid "Logo & Header Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:506
+msgid "Site Logo"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:517
+msgid "Padding Top"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:518, ../inc/customizer/customizer-theme-options.php:531
+msgid "You have to use in px. Eg: 20px."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:530
+msgid "Padding Bottom"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:543
+msgid "Site Title Font Family"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:556
+msgid "Site Title Font Weight"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:569
+msgid "Site Title Font Size"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:582
+msgid "Main Header"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:593
+msgid "Header Image Opacity"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:594
+msgid "You can set opacity from 0 to 10"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:611
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:623
+msgid "Enable Header IMG Tag"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:635, ../inc/customizer/customizer-theme-options.php:1409
+msgid "Enable Social Links"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:647
+msgid "Enable Search Button"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:659
+msgid "Display User Login/Register Icon"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:671
+msgid "User Register Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:684
+msgid "User Login Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:697
+msgid "User Lost Password Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:710
+msgid "User Edit Profile Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:723
+msgid "User Logout Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:738
+msgid "Enable WooCommerce Cart"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:754
+msgid "Banner Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:764
+msgid "Enable Banner Section"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:776
+msgid "Select Banner Layout"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:777
+msgid "Posts must have featured image in order to display content."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:791
+msgid "Select Post Category"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:805
+msgid "Select Post Type"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:819
+msgid "Number of Posts"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:834, ../widgets/eclg-newsletter-widget.php:159
+msgid "Button Title"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:847
+msgid "Enable Fallback Image in Banner"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:875
+msgid "Homepage Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:885, ../inc/customizer/customizer-theme-options.php:1004, ../inc/customizer/customizer-theme-options.php:1112
+msgid "Select Post Listing Layout"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:899, ../inc/customizer/customizer-theme-options.php:1018, ../inc/customizer/customizer-theme-options.php:1126
+msgid "Select Post Listing Style"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:914, ../inc/customizer/customizer-theme-options.php:1033, ../inc/customizer/customizer-theme-options.php:1141, ../inc/customizer/customizer-theme-options.php:1632
+msgid "Select Sidebar Position"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:928, ../inc/customizer/customizer-theme-options.php:1047, ../inc/customizer/customizer-theme-options.php:1155
+msgid "Button Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:954, ../inc/customizer/customizer-theme-options.php:1073, ../inc/customizer/customizer-theme-options.php:1181, ../inc/customizer/customizer-theme-options.php:1232
+msgid "Display Post Author"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:967, ../inc/customizer/customizer-theme-options.php:1086, ../inc/customizer/customizer-theme-options.php:1194, ../inc/customizer/customizer-theme-options.php:1244
+msgid "Display Posted Date"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:981
+msgid "Site Pages Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:993
+msgid "Archive Page"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1101
+msgid "Search Page"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1209
+msgid "Single Post"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1256
+msgid "Display Author Box"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1268
+msgid "Display Related Posts"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1280
+msgid "Related Posts : Title"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1293
+msgid "Related Posts : Meta Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1307
+msgid "Pagination Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1314
+msgid "Pagination Setting"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1325
+msgid "Paination Middle Size"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1326
+msgid "Sets numbers to either side of current page, but not including current page. Maximum 5 and minimum 0 can be set."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1343
+msgid "Pagination Format"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1357
+msgid "Previous Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1370
+msgid "Next Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1385
+msgid "Footer Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1395
+msgid "Footer Color Mode"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1422
+msgid "Copyright & Credit Text"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1423
+msgid "You can use <a> & <span> tags with the copyright and credit text."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1435
+msgid "Newsletter Options"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1446
+msgid "Typography"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1447, ../inc/customizer/customizer-theme-options.php:1541
+msgid "You need to install Email Capture &amp; Lead Generation plugin for this option."
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1460
+msgid "Title Font Family"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1473
+msgid "Title Font Weight"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1486
+msgid "Title Font Size"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1501
+msgid "Button Font Family"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1514
+msgid "Button Font Weight"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1527
+msgid "Button Font Size"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1540
+msgid "Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1551
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1561
+msgid "Title Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1571
+msgid "Label Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1581
+msgid "Button Text Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1591
+msgid "Button Text Hover Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1601
+msgid "Button Background Color"
+msgstr ""
+
+#: ../inc/customizer/customizer-theme-options.php:1611
+msgid "Button Background Hover Color"
+msgstr ""
+
+#: ../inc/customizer/customizer.php:50
+msgid "Site Title Color"
+msgstr ""
+
+#: ../inc/customizer/customizer.php:51
+msgid "Site Background"
+msgstr ""
+
+#: ../inc/metabox/post-meta.php:37
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../inc/metabox/post-meta.php:60
+msgid "None"
+msgstr ""
+
+#: ../inc/metabox/post-meta.php:71
+msgid "checked"
+msgstr ""
+
+#: ../inc/welcome/welcome.php:74
+msgid "Welcome! Thank you for choosing %1$s!. To fully take advantage of our theme what we offer, Lets Get Started."
+msgstr ""
+
+#: ../inc/welcome/welcome.php:74
+msgid "Clicking on get started will activate &quot;Wishful Companion&quot;, &quot;Email Capture &amp; Lead Generation&quot; plugins."
+msgstr ""
+
+#: ../inc/welcome/welcome.php:74
+msgid "Get started with %s"
+msgstr ""
+
+#: ../inc/welcome/welcome.php:110
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: ../inc/welcome/welcome.php:188
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
+#: ../inc/welcome/welcome.php:221
+msgid "Processing..."
+msgstr ""
+
+#. translators: %s: search query.
+#: ../search.php:27
+msgid "Search Results For : %s"
+msgstr ""
+
+#: ../template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: ../template-parts/content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:32
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:19
+msgid "Custom Wishful Blog Newsletter Plugin compatible with ECLG Newsletter."
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:23
+msgid "WB : Newsletter Widget"
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:44, ../widgets/eclg-newsletter-widget.php:113
+msgid "Submit"
+msgstr ""
+
+#. translators: %1$s: plugin name.
+#: ../widgets/eclg-newsletter-widget.php:125
+msgid "Please install and activate %1$s plugin to use Newsletter widget."
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:126
+msgid "Email Capture &amp; Lead Generation"
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:138, ../widgets/homepage-post-widget.php:200, ../widgets/post-widget-layout-one.php:179, ../widgets/post-widget-layout-two.php:182, ../widgets/social-widget.php:123, ../widgets/wishful-author-widget.php:135
+msgid "Title"
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:146
+msgid "Display First Name Field"
+msgstr ""
+
+#: ../widgets/eclg-newsletter-widget.php:153
+msgid "Display Last Name Field"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:19
+msgid "Custom Wishful Blog Homepage Post Widget"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:23
+msgid "WB : Homepage Post Widget"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:207
+msgid "Layout Style"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:227, ../widgets/post-widget-layout-one.php:186, ../widgets/post-widget-layout-two.php:189
+msgid "Select Category"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:236, ../widgets/post-widget-layout-one.php:195, ../widgets/post-widget-layout-two.php:198
+msgid "Show All Category Posts"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:244, ../widgets/post-widget-layout-one.php:203, ../widgets/post-widget-layout-two.php:206
+msgid "Post Type"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:264, ../widgets/post-widget-layout-one.php:223, ../widgets/post-widget-layout-two.php:226
+msgid "No of Posts"
+msgstr ""
+
+#: ../widgets/homepage-post-widget.php:271, ../widgets/post-widget-layout-one.php:230, ../widgets/post-widget-layout-two.php:233
+msgid "Display Options"
+msgstr ""
+
+#: ../widgets/post-widget-layout-one.php:19
+msgid "Custom Wishful Blog Post Widget Layout One"
+msgstr ""
+
+#: ../widgets/post-widget-layout-one.php:23
+msgid "WB : Post Widget Layout One"
+msgstr ""
+
+#: ../widgets/post-widget-layout-one.php:146
+msgid "Place \"Post Widget Layout One\" in \"Sidebar or Footer Widget Area\"."
+msgstr ""
+
+#: ../widgets/post-widget-layout-two.php:149
+msgid "Place \"Post Widget Layout Two\" in \"Sidebar or Footer Widget Area\"."
+msgstr ""
+
+#: ../widgets/social-widget.php:19
+msgid "Custom Wishful Blog Social Widget"
+msgstr ""
+
+#: ../widgets/social-widget.php:23
+msgid "WB : Social Widget"
+msgstr ""
+
+#: ../widgets/social-widget.php:58
+msgid "Facebook"
+msgstr ""
+
+#: ../widgets/social-widget.php:62
+msgid "Twitter"
+msgstr ""
+
+#: ../widgets/social-widget.php:66
+msgid "Youtube"
+msgstr ""
+
+#: ../widgets/social-widget.php:70
+msgid "instagram"
+msgstr ""
+
+#: ../widgets/social-widget.php:74
+msgid "Pinterest"
+msgstr ""
+
+#: ../widgets/social-widget.php:78
+msgid "Vimeo"
+msgstr ""
+
+#: ../widgets/social-widget.php:91
+msgid "Place \"Social Widget\" in \"Sidebar or Footer Widget Area\"."
+msgstr ""
+
+#: ../widgets/social-widget.php:165
+msgid "Vimeo Link"
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:19
+msgid "Custom Wishful Blog Author Widget"
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:23
+msgid "WB : Author Widget"
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:104
+msgid "Place \"Author Widget\" in \"Sidebar or Footer Widget Area\"."
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:142
+msgid "Author Page"
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:150
+msgid "&mdash; Select Page &mdash;"
+msgstr ""
+
+#: ../widgets/wishful-author-widget.php:158
+msgid "Author Link Title"
+msgstr ""
