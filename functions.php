@@ -15,5 +15,4 @@
 
   add_action('wp_enqueue_scripts','ajout_style');
 
-  <
 ?>
