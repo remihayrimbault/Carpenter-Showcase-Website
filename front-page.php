@@ -30,15 +30,11 @@
                   </div>
                     <!-- Permet de récuperer un widget menu, déclarer dans functions.php -->
                 </nav>
-                <div id="dessous-nav">
-                    <p id="texte_header">Charpentier depuis <span style="font-weight:500;color:white;">16 ans</span> sur le <span style="font-weight:500;color:white;">bassin Chambérien</span>, mon objectif est de vous <span style="font-weight:500;color:white;">accompagner</span> afin de <span style="font-weight:500;color:white;">réaliser</span> vos projets <span style="font-weight:500;color:white;">les plus fous</span>
-                    </p>
-                </div>
             </header>
-
-            <main>
-                <h1><?php echo get_bloginfo('name'); ?></h1>
-            </main>
+            <div id="dessous-nav">
+                <p id="texte_header">Charpentier depuis <span style="font-weight:500;color:white;">16 ans</span> sur le <span style="font-weight:500;color:white;">bassin Chambérien</span>, mon objectif est de vous <span style="font-weight:500;color:white;">accompagner</span> afin de <span style="font-weight:500;color:white;">réaliser</span> vos projets <span style="font-weight:500;color:white;">les plus fous</span>
+                </p>
+            </div>
 
             <footer>
                 <nav>
