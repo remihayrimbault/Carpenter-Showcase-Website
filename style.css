@@ -1,5 +1,124 @@
 *{
-    color: yellow;
+    color: #FFAC0B;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Test */
+#nav-header{
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  width: 100%;
+  height: 14vh;
+  position: fixed;
+  background: white;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+p#nom-nav{
+  font-weight: 500;
+  display: block;
+  width: 20%;
+  font-size: 150%;
+  line-height : 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div#nav-line{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2%;
+  width: 2px;
+  height: 60%;
+  background: #FFAC0B;
+}
+
+#nav-titre{
+  line-height: 30%;
+  font-weight: 200;
+  font-size: 130%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+img#logo-nav{
+  width: 15%;
+  margin-left: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1%;
+  display: block;
+}
+
+#nav-gauche{
+  width: 50%;
+  display: flex;
+}
+
+#nav-droite{
+  width: 50%;
+  display: flex;
+
+}
+
+ul#menu-menu-reseaux{
+  list-style-type: none;
+  text-decoration: none;
+  list-style-position: outside;
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+  height: 100%;
+  margin-top:0;
+  margin-bottom: 0;
+
+}
+
+ul#menu-menu-reseaux a{
+  text-decoration: none;
+  list-style-position: outside;
+  white-space: nowrap;
+  font-weight: 200;
+  font-size: 120%;
+  height: 100%;
+}
+
+ul#menu-menu-reseaux li{
+  list-style-position: outside;
+  white-space: nowrap;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div#dessous-nav{
+  margin-top: 13vh;
+  height: 85vh;
+  background-image:url("images/fond_header.png");
+}
+
+div#dessous-nav img{
+  width: 120%;
+}
+
+p#texte_header{
+  width: 60%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 18%;
+  font-size: 180%;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+span#header_strong{
+  font-weight: 700;
+  color: white;
+}

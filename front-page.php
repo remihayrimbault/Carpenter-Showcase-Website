@@ -7,38 +7,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Cabane</title>
-    <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-
+    <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
     <?php wp_head(); ?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="indexPage">
-    <div class="maskIndex">
-        <div class="line"></div>
-        <div class="d-flex h-100 p-3 flex-column">
-
-            <header class="mb-auto d-flex justify-content-between">
-                <img class="pl-5 pt-5" src="<?php bloginfo('template_directory') ?>/images/monogramme.png'" alt="Monogramme" />
-                <nav class="pr-5 pt-5 nav nav-masthead">
+<body>
+            <header>
+                <nav id="nav-header">
+                  <div id="nav-gauche">
+                    <img id="logo-nav" src="<?php bloginfo('template_directory')?>/images/logo.png'" alt="Logo"/>
+                    <p id="nom-nav"><?php echo get_bloginfo('name'); ?></p>
+                    <div id="nav-line"></div>
+                    <div id="nav-titre">
+                      <p>Charpentier</p>
+                      <p>Bassin Chambérien</p>
+                    </div>
+                  </div>
+                  <div id="nav-droite">
                     <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
+                  </div>
                     <!-- Permet de récuperer un widget menu, déclarer dans functions.php -->
                 </nav>
+                <div id="dessous-nav">
+                    <p id="texte_header">Charpentier depuis <span style="font-weight:500;color:white;">16 ans</span> sur le <span style="font-weight:500;color:white;">bassin Chambérien</span>, mon objectif est de vous <span style="font-weight:500;color:white;">accompagner</span> afin de <span style="font-weight:500;color:white;">réaliser</span> vos projets <span style="font-weight:500;color:white;">les plus fous</span>
+                    </p>
+                </div>
             </header>
 
-            <main class="text-center">
+            <main>
                 <h1><?php echo get_bloginfo('name'); ?></h1>
-                <p class="lead"><?php echo get_bloginfo('description'); ?></p>
             </main>
 
-            <footer class="mt-auto">
-                <nav class="nav justify-content-center pb-5">
+            <footer>
+                <nav>
                     <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
                 </nav>
             </footer>
-        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"></script>
         <?php wp_footer(); ?>
 </body>
 
