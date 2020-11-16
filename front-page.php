@@ -34,14 +34,17 @@
             <div id="dessous-nav">
                 <p id="texte_header">Charpentier depuis <span style="font-weight:500;color:white;">16 ans</span> sur le <span style="font-weight:500;color:white;">bassin Chambérien</span>, mon objectif est de vous <span style="font-weight:500;color:white;">accompagner</span> afin de <span style="font-weight:500;color:white;">réaliser</span> vos projets <span style="font-weight:500;color:white;">les plus fous</span>
                 </p>
+                <div id="fleches"><a href="#"><i class="fas fa-angle-double-down"></i></a></div>
+            </div>
+            <div id="reals">
+              <h1 class="titres">Mes réalisations</h1>
             </div>
 
             <footer>
-                <nav>
-                    <?php wp_nav_menu(array('theme_location' => 'menu-principal')); ?>
-                </nav>
+
             </footer>
 
+        <script src="https://kit.fontawesome.com/f1531d5e66.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <?php wp_footer(); ?>
 </body>

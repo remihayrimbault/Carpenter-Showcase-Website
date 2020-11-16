@@ -1,6 +1,7 @@
 *{
     color: #FFAC0B;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -117,7 +118,7 @@ div#dessous-nav img{
 
 p#texte_header{
   width: 60%;
-  height: 70%;
+  height: 40%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 18%;
@@ -130,4 +131,40 @@ p#texte_header{
 span#header_strong{
   font-weight: 700;
   color: white;
+}
+
+.titres {
+  color: white;
+  -webkit-text-stroke: 2px #FFAC0B;
+  font-size: 700%;
+  margin: 1% 0 0;
+}
+
+.fa-angle-double-down{
+  display: block;
+  margin: auto;
+  font-size: 350%;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-name: opac;
+  animation-iteration-count: infinite;
+  color: #FFAC0B;
+}
+
+
+@keyframes opac {
+  from {
+    color: #FFAC0B;
+  }
+
+  to {
+    color: #ffffff;
+  }
+}
+
+
+#fleches{
+  width: 5%;
+  margin: 4% auto 0;
+  color: #FFAC0B;
 }
