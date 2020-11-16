@@ -17,7 +17,7 @@
 <body>
             <header>
                 <nav id="nav-header">
-                  <div id="nav-gauche">
+                  <div id="nav-gauche"> 
                     <img id="logo-nav" src="<?php bloginfo('template_directory')?>/images/logo.png'" alt="Logo"/>
                     <p id="nom-nav"><?php echo get_bloginfo('name'); ?></p>
                     <div id="nav-line"></div>
