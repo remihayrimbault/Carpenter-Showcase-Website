@@ -9,7 +9,7 @@ body{
 }
 
 #nav-header{
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
   display: flex;
   width: 100%;
   height: 14vh;
@@ -30,7 +30,7 @@ p#nom-nav{
   line-height : 90%;
   margin-top: auto;
   margin-bottom: auto;
-  color: black;
+  color: #161616;
 }
 
 img#logo-nav{
@@ -74,7 +74,7 @@ ul#menu-menu-reseaux a{
   font-weight: 500;
   font-size: 100%;
   height: 100%;
-  color: black;
+  color: #161616;
   position: relative;
 }
 
@@ -150,6 +150,7 @@ div#premierepage_orange{
   z-index: 20;
   margin-top: 35%;
   left: 15%;
+  color: #161616;
 }
 
 div#premierepage_vert{
@@ -188,3 +189,101 @@ div#premierepage_orange p{
   text-align: center;
   line-height: 130%;
 }
+
+div#wrap{
+  margin:0 auto 0;
+  width: 80%;
+}
+
+div#wrap h1{
+  font-size: 45px;
+}
+
+div#realisations{
+  margin-top: 50vh;
+}
+
+div#vosprojets{
+  display: flex;
+  height: 60vh;
+  width: 100%;
+}
+
+div#vosprojets p{
+  text-align: center;
+}
+
+div#vosprojets_gauche{
+  width: 45%;
+  height: 100%;
+}
+
+div#vosprojets_divbarre{
+  width: 10%;
+  height: 100%;
+}
+
+div#vosprojets_barre{
+  display: block;
+  width: 2px;
+  height: 60%;
+  margin: 50% auto 50%;
+  background: #576E34;
+  vertical-align: center;
+}
+
+
+div#vosprojets_droite{
+  width: 45%;
+  height: 100%;
+}
+
+.vosprojets_image{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pergola{
+  opacity: 100%;
+}
+
+#cabane{
+  opacity: 30%;
+}
+
+#extension{
+  opacity: 30%;
+}
+
+#mezzanine{
+  opacity: 30%;
+}
+
+#charpente{
+  opacity: 30%;
+}
+
+#plus{
+  opacity: 30%;
+}
+
+.image_carousel{
+  width: 30%;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 40px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
