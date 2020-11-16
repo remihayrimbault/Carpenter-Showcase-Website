@@ -34,7 +34,7 @@
                 <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
             </div>
             <div id="reals">
-              <h1 class="titres">Mes réalisations</h1>
+              
             </div>
 
             <footer>
