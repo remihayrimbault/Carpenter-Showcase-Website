@@ -17,14 +17,9 @@
 <body>
             <header>
                 <nav id="nav-header">
-                  <div id="nav-gauche"> 
-                    <img id="logo-nav" src="<?php bloginfo('template_directory')?>/images/logo.png'" alt="Logo"/>
+                  <div id="nav-gauche">
+                    <img id="logo-nav" src="<?php if( get_field('logo_frank') ): ?><?php the_field('logo_frank'); ?><?php endif; ?>" alt="Logo"/>
                     <p id="nom-nav"><?php echo get_bloginfo('name'); ?></p>
-                    <div id="nav-line"></div>
-                    <div id="nav-titre">
-                      <p>Charpentier</p>
-                      <p>Bassin Chambérien</p>
-                    </div>
                   </div>
                   <div id="nav-droite">
                     <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
@@ -33,9 +28,10 @@
                 </nav>
             </header>
             <div id="dessous-nav">
-                <p id="texte_header">Charpentier depuis <span style="font-weight:500;color:white;">16 ans</span> sur le <span style="font-weight:500;color:white;">bassin Chambérien</span>, mon objectif est de vous <span style="font-weight:500;color:white;">accompagner</span> afin de <span style="font-weight:500;color:white;">réaliser</span> vos projets <span style="font-weight:500;color:white;">les plus fous</span>
-                </p>
-                <div id="fleches"><a href="#"><i class="fas fa-angle-double-down"></i></a></div>
+              <div id="premierepage_vert"><p>Contactez-moi</p></div>
+                <div id="premierepage_orange"><p>Vous avez un projet ou une envie ? Vous souhaitez construire une <span class="bold">cabane en bois</span>, un <span class="bold">abri de jardin</span>, une <span class="bold">terrasse</span> ou autres ? En tant qu’<span class="bold">artisan charpentier</span> expérimenté, je suis là pour enjoliver votre jardin et votre chez-vous.</p></div>
+                <p id="texte_header"><?php echo get_bloginfo('description');?></p>
+                <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
             </div>
             <div id="reals">
               <h1 class="titres">Mes réalisations</h1>
