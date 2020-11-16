@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Cabane</title>
+      <link href="<?php bloginfo('template_directory');?>/reset.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
     <?php wp_head(); ?>
     <link rel="preconnect" href="https://fonts.gstatic.com">
