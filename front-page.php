@@ -73,7 +73,7 @@
                           <p>Sauna extérieur</p>
                         </div>
                       </div>
-                      <div class="div7" onclick="active_carte(abri);">
+                      <div class="div7" onclick="active_carte(abris);">
                         <div class="vosprojets_carte" id="abris">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
                           <p>Abris de jardin</p>
