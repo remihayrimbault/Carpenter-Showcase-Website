@@ -26,8 +26,8 @@
                 </nav>
             </header>
             <div id="dessous-nav">
-              <div id="premierepage_vert"><p>Contactez-moi</p></div>
-                <div id="premierepage_orange"><p>Vous avez un projet ou une envie ? Vous souhaitez construire une <span class="bold">cabane en bois</span>, un <span class="bold">abri de jardin</span>, une <span class="bold">terrasse</span> ou autres ? En tant qu’<span class="bold">artisan charpentier</span> expérimenté, je suis là pour enjoliver votre jardin et votre chez-vous.</p></div>
+              <div id="premierepage_vert"><a><p>Contactez-moi</p></a></div>
+                <div id="premierepage_orange"><p><?php the_field('texte_header'); ?></p></div>
                 <p id="texte_header"><?php echo get_bloginfo('description');?></p>
                 <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
             </div>
@@ -69,19 +69,19 @@
                       </div>
                       <div class="div6" onclick="active_carte(sauna);">
                         <div class="vosprojets_carte" id="sauna">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/sauna.png'" alt="illustration">
                           <p>Sauna extérieur</p>
                         </div>
                       </div>
                       <div class="div7" onclick="active_carte(abris);">
                         <div class="vosprojets_carte" id="abris">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/abris.png'" alt="illustration">
                           <p>Abris de jardin</p>
                         </div>
                       </div>
                       <div class="div8" onclick="active_carte(terrasse);">
                         <div class="vosprojets_carte" id="terrasse">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/terrasse.png'" alt="illustration">
                           <p>Terrasse</p>
                         </div>
                       </div>
@@ -160,14 +160,132 @@
                     </div>
                   </div>
                 </div>
+                <div id="presentation">
+                  <div id="presentation-gauche">
+                    <div class="parent2">
+                      <div class="div1_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie1'); ?>" alt="Photo galerie"></div>
+                      <div class="div2_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie2'); ?>" alt="Photo galerie"></div>
+                      <div class="div3_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie3'); ?>" alt="Photo galerie"></div>
+                      <div class="div4_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie4'); ?>" alt="Photo galerie"></div>
+                      <div class="div5_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie5'); ?>" alt="Photo galerie"></div>
+                      <div class="div6_2 div_galerie"><img class="image_galerie" src="<?php the_field('photo_galerie6'); ?>" alt="Photo galerie"></div>
+                    </div>
+                  </div>
+                  <div id="presentation-droite">
+                    <div id="texte_pres">
+                      <p><?php the_field('texte_projet'); ?></p>
+                      <div id="video_pres"><video src="<?php bloginfo('template_directory') ?>/video_pres.mp4" controls preload="true"></video></div>
+                    </div>
+                    <div id="bouton_contact_pres">
+                      <a><p>Me contacter</p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="quisuisje">
+                <h1>Qui suis-je ?</h1>
+                <div id="franck">
+                  <div id="texte_frank">
+                    <p><?php the_field('texte_pres'); ?></p>
+                  </div>
+                  <div id="photo_frank">
+                    <img id="photo_fr" src="<?php the_field('photo_frank'); ?>" alt="Photo de moi">
+                  </div>
+                </div>
+                <div id="ma_plusvalue">
+                  <h2>Ma plus-value</h2>
+                  <div id="cartes_plusvalue">
+                    <?php
+                      $plus_value = get_field('plus_value');
+                      foreach($plus_value as $plus_values):  ?>
+                        <div class="carte_plusvalue">
+                          <h3 class="h_plusvalue"><?php echo($plus_values['titre']);?></h3>
+                          <img class="image_plusvalue" src="<?php echo($plus_values['image']);?>" alt="illustration">
+                          <p class="p_plusvalue"><?php echo($plus_values['description']);?></p>
+                        </div>
+                    <?php endforeach; ?>
+                  </div>
+                </div>
               </div>
             </div>
-
+            <div id="temoignages">
+              <h2>Ils m'ont fait confiance</h2>
+              <div class="carousel_temoignage">
+              <?php
+                $temoignage = get_field('temoignage');
+                foreach($temoignage as $temoignages):  ?>
+                  <div class="carte_temoignage">
+                    <p class="temoignage_texte"><?php echo($temoignages['texte_tem']);?></p>
+                    <p class="temoignage_auteur"><?php echo($temoignages['auteur_tem']);?></p>
+                  </div>
+                <?php endforeach; ?>
+              </div>
+              <div id="bouton_tem">
+                <a href=""><p>En voir plus</p></a>
+              </div>
+            </div>
             <footer>
+              <div id="me_contacter">
+                <h1>Me contacter</h1>
+                <div id="formulaire">
+                  <p id="intro_form">Exprimez vos envies et je vous rappelle.</p>
+                  <form method="POST" action="">
+              			<input id="nom" type="text" name="nom" placeholder="Nom et prénom" value="" />
+              			<input id="phone" type="phone" name="phone" placeholder="Numéro de téléphone" value="" />
+              			<textarea id="texte_form" name="message" placeholder="Votre demande" ></textarea>
+                    <p id="texte_mention">En envoyant ce message, vous consentez à la collecte et au traitement des données renseignées ci-dessus pour l’usage exclusif. <a style="color:black;text-decoration:underlined;">En savoir plus.</a></p>
+              			<input id="bouton_form" type="submit" value="Envoyer !" name="mailform"/>
+              		</form>
+                </div>
+                <div id="appel">
+                  <div id="partie_verte">
+                    <p id="num_bouton"><?php the_field('telephone'); ?></p>
+                  </div>
+                  <div id="partie_jaune">
+                    <p>Appelez-moi pour discuter de votre projet !</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" id="retour">Retour en haut</a>
+              <div id="barre_de_fin">
+                <div id="wrap-footer">
+                  <div id="footer_gauche">
+                    <img id="logo-footer" src="<?php the_field('logo_frank'); ?>" alt="Logo"/>
+                    <div id="texte_pres_footer">
+                      <p id="nom_footer"><?php echo get_bloginfo('name'); ?></p>
+                      <p id="desc_footer">Artisan Charpentier <br> Bassin Chambérien<p>
+                    </div>
+                  </div>
+                  <div id="footer_milieu">
+                    <div class="illu_footer">
+                      <img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/phone.png'" alt="illustration">
+                      <img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/maps.png'" alt="illustration">
+                    </div>
+                    <div class="contacts_footer">
+                      <p id="tel_footer"><?php the_field('telephone'); ?></p>
+                      <p id="maps_footer" ><?php the_field('adresse'); ?></p>
+                    </div>
+                  </div>
+                  <div id="footer_droite">
+                    <div id="menu_footer">
+                      <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </footer>
 
             <script type="text/javascript">
+            $('.carousel_temoignage').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots:false,
+              arrows:false,
+              autoplay: true,
+              autoplaySpeed: 5000,
+            });
+
               $('.carousel_pergola').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
