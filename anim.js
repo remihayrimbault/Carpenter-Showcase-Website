@@ -9,7 +9,7 @@ function active_carte($nom) {
     $('#plus').removeClass('active');
     $('#charpente').removeClass('active');
     $('#sauna').removeClass('active');
-    $('#abri').removeClass('active');
+    $('#abris').removeClass('active');
     $('#terrasse').removeClass('active');
     $('.carousel_terrasse').css('display', 'none');
     $('.carousel_terrasse').slick('slickPause');
