@@ -67,7 +67,25 @@
                           <p>Pergola</p>
                         </div>
                       </div>
-                      <div class="div6" onclick="active_carte(plus);">
+                      <div class="div6" onclick="active_carte(sauna);">
+                        <div class="vosprojets_carte" id="sauna">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <p>Sauna extérieur</p>
+                        </div>
+                      </div>
+                      <div class="div7" onclick="active_carte(abri);">
+                        <div class="vosprojets_carte" id="abris">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <p>Abris de jardin</p>
+                        </div>
+                      </div>
+                      <div class="div8" onclick="active_carte(terrasse);">
+                        <div class="vosprojets_carte" id="terrasse">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <p>Terrasse</p>
+                        </div>
+                      </div>
+                      <div class="div9" onclick="active_carte(plus);">
                         <div class="vosprojets_carte" class="vosprojets_carte" id="plus">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/plus.png'" alt="illustration">
                           <p>Plus</p>
@@ -78,9 +96,67 @@
                   <div id="vosprojets_divbarre"><div id="vosprojets_barre"></div></div>
                   <div id="vosprojets_droite">
                     <div class="carousel_pergola">
-                      <div><image class="image_carousel" src="<?php if( get_field('image_pergola1') ): ?><?php the_field('image_pergola1'); ?><?php endif; ?>" alt="photo pergola"></div>
-                      <div><image class="image_carousel" src="<?php if( get_field('image_pergola2') ): ?><?php the_field('image_pergola2'); ?><?php endif; ?>" alt="photo pergola"></div>
-                      <div><image class="image_carousel" src="<?php if( get_field('image_pergola3') ): ?><?php the_field('image_pergola3'); ?><?php endif; ?>" alt="photo pergola"></div>
+                      <?php
+                        $pergola = get_field('photos_de_pergola');
+                        foreach($pergola as $pergolas):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($pergolas['image_pergola']);?>" alt="photo pergola"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_mezzanine">
+                      <?php
+                        $mezzanine = get_field('photos_de_mezzanine');
+                        foreach($mezzanine as $mezzanines):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($mezzanines['image_mezzanine']);?>" alt="photo mezzanine"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_charpente">
+                      <?php
+                        $charpente = get_field('photos_de_charpente');
+                        foreach($charpente as $charpentes):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($charpentes['image_charpente']);?>" alt="photo charpente"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_extension">
+                      <?php
+                        $extension = get_field('photos_de_extension');
+                        foreach($extension as $extensions):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($extensions['image_extension']);?>" alt="photo extension"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_cabane">
+                      <?php
+                        $cabane = get_field('photos_de_cabane');
+                        foreach($cabane as $cabanes):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($cabanes['image_cabane']);?>" alt="photo cabane"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_sauna">
+                      <?php
+                        $sauna = get_field('photos_de_sauna');
+                        foreach($sauna as $saunas):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($saunas['image_sauna']);?>" alt="photo sauna"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_abris">
+                      <?php
+                        $abris = get_field('photos_de_abris');
+                        foreach($abris as $abriss):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($abriss['image_abris']);?>" alt="photo abris"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_terrasse">
+                      <?php
+                        $terrasse = get_field('photos_de_terrasse');
+                        foreach($terrasse as $terrasses):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($terrasses['image_terrasse']);?>" alt="photo terrasse"></div></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="carousel_plus">
+                      <?php
+                        $plus = get_field('photos_de_plus');
+                        foreach($plus as $pluss):  ?>
+                          <div class="carte_carousel"><div class="image_slider"><img class="image_carousel" src="<?php echo($pluss['image_plus']);?>" alt="photo plus"></div></div>
+                        <?php endforeach; ?>
                     </div>
                   </div>
                 </div>
@@ -92,9 +168,74 @@
             </footer>
 
             <script type="text/javascript">
-              $('#carousel_pergola').slick({
+              $('.carousel_pergola').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_mezzanine').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_terrasse').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_plus').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_abris').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_sauna').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_cabane').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_extension').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+
+              $('.carousel_charpente').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
                 autoplay: true,
                 autoplaySpeed: 2000,
               });
