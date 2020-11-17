@@ -7,8 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Cabane</title>
-    <link href="<?php bloginfo('template_directory');?>/reset.css" rel="stylesheet">
-    <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
     <?php wp_head(); ?>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -39,37 +37,37 @@
                 <div id="vosprojets">
                   <div id="vosprojets_gauche">
                     <div class="parent">
-                      <div class="div1" onclick="charpente();">
+                      <div class="div1" onclick="active_carte(charpente);">
                         <div class="vosprojets_carte" id="charpente">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/charpente.png'" alt="illustration">
                           <p>Charpente</p>
                         </div>
                       </div>
-                      <div class="div2" onclick="cabane();">
+                      <div class="div2" onclick="active_carte(cabane);">
                         <div class="vosprojets_carte" id="cabane">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/cabane.png'" alt="illustration">
                           <p>Cabane</p>
                         </div>
                       </div>
-                      <div class="div3" onclick="extension();">
+                      <div class="div3" onclick="active_carte(extension);">
                         <div class="vosprojets_carte" id="extension">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/extension.png'" alt="illustration">
                           <p>Extension</p>
                         </div>
                       </div>
-                      <div class="div4" onclick="mezzanine();">
+                      <div class="div4" onclick="active_carte(mezzanine);">
                         <div class="vosprojets_carte" id="mezzanine">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/mezzanine.png'" alt="illustration">
                           <p>Mezzanine</p>
                         </div>
                       </div>
-                      <div class="div5" onclick="pergola();">
+                      <div class="div5" onclick="active_carte(pergola);">
                         <div class="vosprojets_carte active" id="pergola">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
                           <p>Pergola</p>
                         </div>
                       </div>
-                      <div class="div6" onclick="plus();">
+                      <div class="div6" onclick="active_carte(plus);">
                         <div class="vosprojets_carte" class="vosprojets_carte" id="plus">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/plus.png'" alt="illustration">
                           <p>Plus</p>
@@ -93,64 +91,16 @@
 
             </footer>
 
-        <script src="https://kit.fontawesome.com/f1531d5e66.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
+            <script type="text/javascript">
+              $('#carousel_pergola').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+            </script>
 
-          function charpente() {
-              $('#pergola').css('opacity', '30%');
-              $('#extension').css('opacity', '30%');
-              $('#cabane').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '30%');
-              $('#plus').css('opacity', '30%');
-              $('#charpente').css('opacity', '100%');
-          };
-
-          function cabane() {
-              $('#pergola').css('opacity', '30%');
-              $('#extension').css('opacity', '30%');
-              $('#charpente').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '30%');
-              $('#plus').css('opacity', '30%');
-              $('#cabane').css('opacity', '100%');
-          };
-
-          function pergola() {
-              $('#cabane').css('opacity', '30%');
-              $('#extension').css('opacity', '30%');
-              $('#charpente').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '30%');
-              $('#plus').css('opacity', '30%');
-              $('#pergola').css('opacity', '100%');
-          };
-
-          function plus() {
-              $('#cabane').css('opacity', '30%');
-              $('#extension').css('opacity', '30%');
-              $('#charpente').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '30%');
-              $('#pergola').css('opacity', '30%');
-              $('#plus').css('opacity', '100%');
-          };
-
-          function mezzanine() {
-              $('#cabane').css('opacity', '30%');
-              $('#extension').css('opacity', '30%');
-              $('#charpente').css('opacity', '30%');
-              $('#plus').css('opacity', '30%');
-              $('#pergola').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '100%');
-          };
-
-          function extension() {
-              $('#cabane').css('opacity', '30%');
-              $('#mezzanine').css('opacity', '30%');
-              $('#charpente').css('opacity', '30%');
-              $('#plus').css('opacity', '30%');
-              $('#pergola').css('opacity', '30%');
-              $('#extension').css('opacity', '100%');
-          };
-        </script>
+            <script src="<?php bloginfo('template_directory'); ?>'/anim.js')"></script>
         <?php wp_footer(); ?>
 </body>
 

@@ -8,8 +8,17 @@ register_nav_menus( array(
 
 //Permet d'enregister le style.css + bootstrap pour ceux qui l'utiliseront
 function wpdocs_theme_name_scripts() {
-	wp_register_style('main-style', get_template_directory_uri().'/style.css', array(), true);
-	wp_enqueue_style('main-style');
+	wp_enqueue_style('main-style', get_stylesheet_uri());
+
+	wp_enqueue_style('slick', get_template_directory_uri() . '/slick/slick.css');
+
+	wp_enqueue_style('slick-theme.css', get_template_directory_uri() . '/slick/slick-theme.css');
+
+	wp_enqueue_script('main-jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js');
+
+	wp_enqueue_script('slickjs', get_template_directory_uri().'/slick/slick.js');
+
+	wp_enqueue_script('anim-js', get_template_directory_uri().'/anim.js');
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
 

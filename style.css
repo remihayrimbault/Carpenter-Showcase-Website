@@ -238,35 +238,19 @@ div#vosprojets_droite{
   height: 100%;
 }
 
+.vosprojets_carte{
+  opacity: 30%;
+}
+
+.vosprojets_carte.active{
+  opacity: 100%;
+}
+
 .vosprojets_image{
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#pergola{
-  opacity: 100%;
-}
-
-#cabane{
-  opacity: 30%;
-}
-
-#extension{
-  opacity: 30%;
-}
-
-#mezzanine{
-  opacity: 30%;
-}
-
-#charpente{
-  opacity: 30%;
-}
-
-#plus{
-  opacity: 30%;
 }
 
 .image_carousel{
