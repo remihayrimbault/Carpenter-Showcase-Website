@@ -1,4 +1,5 @@
 <!-- Permet d'afficher la homepage, car front-page.php est pris avant index.php, c'est comme une page perso -->
+<?php
 if(isset($_POST['mailform']))
 {
 	if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message']))
@@ -31,6 +32,7 @@ if(isset($_POST['mailform']))
 		$msg="<p style='color:white;margin-left:25%'>Tous les champs doivent être complétés.<p>";
 	}
 }
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -264,6 +266,12 @@ if(isset($_POST['mailform']))
                     <p id="texte_mention">En envoyant ce message, vous consentez à la collecte et au traitement des données renseignées ci-dessus pour l’usage exclusif. <a style="color:black;text-decoration:underlined;">En savoir plus.</a></p>
               			<input id="bouton_form" type="submit" value="Envoyer !" name="mailform"/>
               		</form>
+                  <?php
+                		if(isset($msg))
+                		{
+                			echo $msg;
+                		}
+                	?>
                 </div>
                 <div id="appel">
                   <div id="partie_verte">
