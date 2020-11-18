@@ -519,6 +519,32 @@ div#cartes_plusvalue{
   margin-top: 5%;
 }
 
+div#bouton_contact_pres{
+  width: 30%;
+  background: #576E34;
+  transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+div#bouton_contact_pres:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+div#bouton_contact_pres p{
+  padding: 5%;
+  font-size: 130%;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
 div#temoignages{
   width: 100%;
   background: #DDBE1A;
@@ -551,36 +577,6 @@ div#temoignages h2{
   text-align: right;
 }
 
-div#bouton_tem{
-  width: 25%;
-  background: #576E34;
-  position: absolute;
-  transition: 0.3s;
-  z-index: 10;
-  left: 37%;
-  top: 330px;
-  cursor: pointer;
-}
-
-div#bouton_tem:hover{
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-div#bouton_tem p{
-  font-size: 160%;
-  font-weight: 500;
-  text-align: center;
-  color: white;
-  margin-top:10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-div#bouton_tem a{
-  text-decoration: none;
-}
-
 footer{
   margin-top: 5%;
 }
@@ -604,65 +600,76 @@ div#formulaire{
   margin-right: auto;
 }
 
+div.wpcf7 {
+margin: 0;
+width: 100%;
+}
+
+.wpcf7-form-control-wrap {
+  width: 100%;
+  border: none;
+}
+
+textarea.wpcf7-form-control {
+  width: 100%;
+  border: none;
+  border: none;
+  background-color: #C4CCB8;
+  color: #576E34;
+  margin: 0;
+  padding-bottom: 15%;
+  width: 100%;
+  padding-top: 2%;
+  font-size: 14px;
+  height: 80px;
+}
+
+.wpcf7-tel {
+  border: none;
+  border: none;
+  width: 100%;
+  background-color: #C4CCB8;
+  color: #576E34;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-size: 14px;
+}
+
+.wpcf7-submit {
+  border: none;
+  color: white;
+  background-color: #576E34;
+  font-size: 14px;
+  padding: 2%;
+  margin: 0;
+}
+
+.your-name > input:nth-child(1) {
+  border: none;
+  border: none;
+  width: 100%;
+  background-color: #C4CCB8;
+  color: #576E34;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-size: 14px;
+}
+
 #intro_form{
   width: 100%;
   font-weight: 200;
   font-size: 120%;
 }
 
-#texte_form{
-  width: 100%;
-  background-color: 576E34;
-  border: none;
-  background-color: #C4CCB8;
-  color: #576E34;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 15%;
-  padding-top: 2%;
-  font-size: 14px;
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: #DDBE1A;
 }
 
-#nom{
-  border: none;
-  margin-bottom: 5%;
-  width: 100%;
-  background-color: #C4CCB8;
-  color: #576E34;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  font-size: 14px;
-}
-
-#phone{
-  border:none;
-  margin-bottom: 5%;
-  width: 100%;
-  background-color: #C4CCB8;
-  color: #576E34;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  font-size: 14px;
-}
-
-#texte_mention{
-  font-size: 90%;
-  width: 100%;
+p#text_form{
+  font-size: 80%;
   font-weight: 200;
 }
 
-#bouton_form{
-  border: none;
-  color: #C4CCB8;
-  background-color: #576E34;
-  font-size: 14px;
-  padding: 2%;
-  margin: 0;
-}
 
 div#appel{
   width: 70%;
@@ -697,13 +704,17 @@ div#partie_verte{
   font-size: 170%;
   font-weight: 800;
   text-align: center;
-  cursor: pointer;
+  transition: 0.3s;
+}
+
+div#partie_verte:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 p#num_bouton{
   margin-top: 10px;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 
 #retour{

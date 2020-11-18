@@ -1,39 +1,3 @@
-<!-- Permet d'afficher la homepage, car front-page.php est pris avant index.php, c'est comme une page perso -->
-<?php
-if(isset($_POST['mailform']))
-{
-	if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message']))
-	{
-		$header="MIME-Version: 1.0\r\n";
-		$header.='From:"remihr.fr"<contact@remihr.fr>'."\n";
-		$header.='Content-Type:text/html; charset="uft-8"'."\n";
-		$header.='Content-Transfer-Encoding: 8bit';
-
-		$message='
-		<html>
-			<body>
-				<div align="center">
-					<br />
-					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
-					<u>Mail de l\'expéditeur :</u>'.$_POST['mail'].'<br />
-					<br />
-					'.nl2br($_POST['message']).'
-					<br />
-				</div>
-			</body>
-		</html>
-		';
-
-		mail("contact@remihr.fr", "CONTACT - remihr.fr", $message, $header);
-		$msg="Votre message a bien été envoyé !";
-	}
-	else
-	{
-		$msg="<p style='color:white;margin-left:25%'>Tous les champs doivent être complétés.<p>";
-	}
-}
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -209,6 +173,9 @@ if(isset($_POST['mailform']))
                       <p><?php the_field('texte_projet'); ?></p>
                       <div id="video_pres"><video src="<?php bloginfo('template_directory') ?>/video_pres.mp4" controls preload="true"></video></div>
                     </div>
+                    <div id="bouton_contact_pres">
+                      <a><p>Me contacter</p></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,28 +217,14 @@ if(isset($_POST['mailform']))
                   </div>
                 <?php endforeach; ?>
               </div>
-              <div id="bouton_tem">
-                <a href=""><p>En voir plus</p></a>
-              </div>
             </div>
             <footer>
               <div id="me_contacter">
                 <h1>Me contacter</h1>
                 <div id="formulaire">
                   <p id="intro_form">Exprimez vos envies et je vous rappelle.</p>
-                  <form method="POST" action="">
-              			<input id="nom" type="text" name="nom" placeholder="Nom et prénom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" />
-              			<input id="phone" type="phone" name="phone" placeholder="Numéro de téléphone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" />
-              			<textarea id="texte_form" name="message" placeholder="Votre demande" ><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea>
-                    <p id="texte_mention">En envoyant ce message, vous consentez à la collecte et au traitement des données renseignées ci-dessus pour l’usage exclusif. <a style="color:black;text-decoration:underlined;">En savoir plus.</a></p>
-              			<input id="bouton_form" type="submit" value="Envoyer !" name="mailform"/>
-              		</form>
-                  <?php
-                		if(isset($msg))
-                		{
-                			echo $msg;
-                		}
-                	?>
+                  <?php $contact='[contact-form-7 id="146" title="Contact"]';
+                    echo do_shortcode($contact);?>
                 </div>
                 <div id="appel">
                   <div id="partie_verte">
