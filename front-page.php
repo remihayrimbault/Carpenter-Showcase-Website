@@ -26,7 +26,7 @@
                 </nav>
             </header>
             <div id="dessous-nav">
-              <div id="premierepage_vert"><a><p>Contactez-moi</p></a></div>
+              <div id="premierepage_vert"><a href="#bouton_tem"><p>Contactez-moi</p></a></div>
                 <div id="premierepage_orange"><p><?php the_field('texte_header'); ?></p></div>
                 <p id="texte_header"><?php echo get_bloginfo('description');?></p>
                 <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
@@ -271,6 +271,10 @@
                       <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
                     </div>
                   </div>
+                </div>
+                <div id="barre_final">
+                  <div id="barre_footer"></div>
+                  <p><a href="#">Mentions légales</a> - Réalisé par l’agence <a href="#">La Cabane</a></p>
                 </div>
               </div>
 
