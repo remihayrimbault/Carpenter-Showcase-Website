@@ -23,4 +23,6 @@ function wpdocs_theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
 
+add_filter( 'wpcf7_validate_configuration', '__return_false' );
+
 ?>
