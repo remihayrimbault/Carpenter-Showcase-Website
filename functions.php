@@ -22,7 +22,7 @@ function wpdocs_theme_name_scripts() {
 	wp_enqueue_script('anim-js', get_template_directory_uri().'/anim.js');
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
-
+/*
 add_filter( 'wpcf7_validate_configuration', '__return_false' );
-
+*/
 ?>
