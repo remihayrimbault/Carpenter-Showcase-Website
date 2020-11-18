@@ -151,7 +151,7 @@
                       <div id="video_pres"><video src="<?php bloginfo('template_directory') ?>/video_pres.mp4" controls preload="true"></video></div>
                     </div>
                     <div id="bouton_contact_pres">
-                      <a><p>Me contacter</p></a>
+                      <a href="#me_contacter"><p>Me contacter</p></a>
                     </div>
                   </div>
                 </div>

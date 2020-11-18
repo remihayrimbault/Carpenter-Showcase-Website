@@ -1,5 +1,4 @@
 
-
 function active_carte($nom) {
     var $idStr = $nom.id;
     $('#pergola').removeClass('active');
@@ -34,3 +33,35 @@ function active_carte($nom) {
     $(".carousel_"+$idStr).css('display', 'block');
     $(".carousel_"+$idStr).slick('refresh');
 };
+
+// JavaScript Document
+
+ // Toggle Icone hamburger
+    $(document).ready(function(){
+        $('.barres').click(function(){
+			$('.barres').toggleClass('active');
+			$('.menu_responsive').css('height', '100%');
+			document.getElementById(".barres");
+        })
+    })
+
+    // JavaScript Document
+
+     // Toggle Icone hamburger
+        $(document).ready(function(){
+            $('.barres').click(function(){
+                $('.barres').toggleClass('active');
+    			document.getElementById(".barres");
+            })
+        })
+
+    	var $hamburger = $('.barres');
+
+    	var hamburgerMotion = new TimelineMax()
+    	.to(".menu_responsive", 1.2, {left: '0%',ease: Expo.easeInOut,})
+    	.staggerFrom(".menu_responsive ul li", 0.5, {x: -100, opacity: 0}, 0.1)
+    	.reverse()
+
+    	$hamburger.on('click', function(e) {
+      		hamburgerMotion.reversed(!hamburgerMotion.reversed());
+    	});

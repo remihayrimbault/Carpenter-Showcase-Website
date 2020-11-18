@@ -53,21 +53,20 @@ img#logo-nav{
 
 }
 
-ul#menu-menu-home{
+#nav-droite > div:nth-child(1) {
   list-style-type: none;
   text-decoration: none;
-  list-style-position: outside;
-  width: 50%;
-  margin-left: 50%;
+  width: 100%;
+  margin-left: 25%;
   display: flex;
-  align-items:flex-end;
+  align-items: center;
   height: 100%;
   margin-top:0;
   margin-bottom: 0;
 
 }
 
-ul#menu-menu-home a{
+#nav-droite > div:nth-child(1) a{
   text-decoration: none;
   list-style-position: outside;
   white-space: nowrap;
@@ -78,13 +77,13 @@ ul#menu-menu-home a{
   position: relative;
 }
 
-ul#menu-menu-home  li > a {
+#nav-droite > div:nth-child(1)  li > a {
   position: relative;
   color: black;
   text-decoration: none;
 }
 
-ul#menu-menu-home li > a::before {
+#nav-droite > div:nth-child(1) li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -98,17 +97,21 @@ ul#menu-menu-home li > a::before {
   transition: all 0.2s ease-in-out 0s;
 }
 
-ul#menu-menu-home li > a:hover::before {
+#nav-droite > div:nth-child(1) li > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
 
-ul#menu-menu-home li{
+#menu-menu-home-1 {
+ width: 100%;
+}
+
+#nav-droite > div:nth-child(1) li{
   list-style-position: outside;
   white-space: nowrap;
-  display: block;
-  margin-left: 20%;
-  margin-right: 20%;
+  display: inline;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -232,6 +235,7 @@ div#vosprojets_gauche{
 }
 
 div#vosprojets_divbarre{
+  display: block;
   width: 6%;
   height: 100%;
 }
@@ -907,4 +911,113 @@ div#footer_droite{
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 0;
+}
+
+.menu_responsive {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+	line-height: 40%;
+	font-size: 80%;
+	z-index: 1000000000;
+	top: 0%;
+  cursor: pointer;
+}
+
+.barres {
+    position: fixed;
+    right: 6.7%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    cursor: pointer;
+	  z-index: 1000000000000;
+	  top:7%;
+}
+.hamburger:before{
+	background-color: black;
+}
+
+.hamburger {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.hamburger::before,
+.hamburger::after
+{
+    content: '';
+    position: fixed;
+    transition: 0.5s;
+	background-color: black;
+	width: 30px;
+    height: 2px;
+}
+
+.barres.active .hamburger {
+    background-color: rgba(255, 255, 255, 0.001);
+}
+
+.hamburger::before {
+    top: -10px;
+	background-color: black;
+}
+
+.hamburger::after {
+    top: 10px;
+	background-color: black;
+}
+
+/* MENU */
+
+
+.menu_responsive ul {
+	position: absolute;
+    transform: translate(-50%, -50%);
+    list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	left: 48%;
+	top: 40%;
+}
+
+.menu_responsive ul li {
+    padding-top: 30px;
+}
+.menu_responsive a {
+    text-decoration: none;
+    color: black;
+	font-weight: 100;
+	text-align: center;
+	font-size: 280%;
+}
+
+/* Animation Barres */
+
+.barres.active .hamburger::before {
+    top: 0;
+    transform: rotate(135deg);
+	background-color: black;
+}
+
+.barres.active .hamburger::after {
+    top: 0;
+    transform: rotate(405deg);
+	background-color: black;
+}
+
+div.barres{
+  display: none;
+}
+
+div.menu_responsive{
+  display: none;
 }
