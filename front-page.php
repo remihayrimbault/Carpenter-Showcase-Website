@@ -223,7 +223,7 @@
                 <h1>Me contacter</h1>
                 <div id="formulaire">
                   <p id="intro_form">Exprimez vos envies et je vous rappelle.</p>
-                  <?php $contact='[contact-form-7 id="146" title="Contact"]';
+                  <?php $contact='[contact-form-7 id="101" title="Contact"]';
                     echo do_shortcode($contact);?>
                 </div>
                 <div id="appel">
