@@ -452,31 +452,6 @@ div#texte_pres p{
   font-size: 110%;
 }
 
-div#bouton_contact_pres{
-  width: 30%;
-  background: #576E34;
-  transition: 0.3s;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  cursor: pointer;
-}
-
-div#bouton_contact_pres:hover{
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-div#bouton_contact_pres p{
-  padding: 5%;
-  font-size: 130%;
-  font-weight: 500;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-}
-
 div#franck{
   width: 80%;
   display: block;
