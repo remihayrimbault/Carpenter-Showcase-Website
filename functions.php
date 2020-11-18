@@ -2,8 +2,7 @@
 
 //Permet d'enregister des menus pour que le client les modifies, et les classes CSS
 register_nav_menus( array(
-	'menu-home' => 'Menu Accueil',
-	'menu-reseaux' => 'Menu Réseaux Sociaux'
+	'menu-home' => 'Menu Accueil'
 ) );
 
 //Permet d'enregister le style.css + bootstrap pour ceux qui l'utiliseront

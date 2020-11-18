@@ -10,7 +10,7 @@
       <div><?php the_content(); ?></div>
   </article>
   <?php endwhile;else:?><p> Désolé pas d'article!</p>
-    
+
   <?php endif; ?>
 <section>
 <?php get_footer();?>

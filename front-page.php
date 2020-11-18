@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Cabane</title>
-    <?php wp_head(); ?>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-            <header>
-                <nav id="nav-header">
-                  <div id="nav-gauche">
-                    <img id="logo-nav" src="<?php if( get_field('logo_frank') ): ?><?php the_field('logo_frank'); ?><?php endif; ?>" alt="Logo"/>
-                    <p id="nom-nav"><?php echo get_bloginfo('name'); ?></p>
-                  </div>
-                  <div id="nav-droite">
-                    <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
-                  </div>
-                    <!-- Permet de récuperer un widget menu, déclarer dans functions.php -->
-                </nav>
-            </header>
+          <?php get_header(); ?>
             <div id="dessous-nav">
               <div id="premierepage_vert"><a href="#bouton_tem"><p>Contactez-moi</p></a></div>
                 <div id="premierepage_orange"><p><?php the_field('texte_header'); ?></p></div>
@@ -218,7 +195,6 @@
                 <?php endforeach; ?>
               </div>
             </div>
-            <footer>
               <div id="me_contacter">
                 <h1>Me contacter</h1>
                 <div id="formulaire">
@@ -236,124 +212,4 @@
                 </div>
               </div>
               <a href="#" id="retour">Retour en haut</a>
-              <div id="barre_de_fin">
-                <div id="wrap-footer">
-                  <div id="footer_gauche">
-                    <img id="logo-footer" src="<?php the_field('logo_frank'); ?>" alt="Logo"/>
-                    <div id="texte_pres_footer">
-                      <p id="nom_footer"><?php echo get_bloginfo('name'); ?></p>
-                      <p id="desc_footer">Artisan Charpentier <br> Bassin Chambérien<p>
-                    </div>
-                  </div>
-                  <div id="footer_milieu">
-                    <div class="illu_footer">
-                      <img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/phone.png'" alt="illustration">
-                      <img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/maps.png'" alt="illustration">
-                    </div>
-                    <div class="contacts_footer">
-                      <p id="tel_footer"><?php the_field('telephone'); ?></p>
-                      <p id="maps_footer" ><?php the_field('adresse'); ?></p>
-                    </div>
-                  </div>
-                  <div id="footer_droite">
-                    <div id="menu_footer">
-                      <?php wp_nav_menu(array('theme_location' => 'menu-reseaux')); ?>
-                    </div>
-                  </div>
-                </div>
-                <div id="barre_final">
-                  <div id="barre_footer"></div>
-                  <p><a href="#">Mentions légales</a> - Réalisé par l’agence <a href="#">La Cabane</a></p>
-                </div>
-              </div>
-
-            </footer>
-
-            <script type="text/javascript">
-            $('.carousel_temoignage').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots:false,
-              arrows:false,
-              autoplay: true,
-              autoplaySpeed: 5000,
-            });
-
-              $('.carousel_pergola').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_mezzanine').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_terrasse').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_plus').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_abris').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_sauna').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_cabane').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_extension').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-
-              $('.carousel_charpente').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-              });
-            </script>
-
-            <script src="<?php bloginfo('template_directory'); ?>'/anim.js')"></script>
-        <?php wp_footer(); ?>
-</body>
-
-</html>
+              <?php get_footer(); ?>

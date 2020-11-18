@@ -53,7 +53,7 @@ img#logo-nav{
 
 }
 
-ul#menu-menu-reseaux{
+ul#menu-menu-home{
   list-style-type: none;
   text-decoration: none;
   list-style-position: outside;
@@ -67,7 +67,7 @@ ul#menu-menu-reseaux{
 
 }
 
-ul#menu-menu-reseaux a{
+ul#menu-menu-home a{
   text-decoration: none;
   list-style-position: outside;
   white-space: nowrap;
@@ -78,13 +78,13 @@ ul#menu-menu-reseaux a{
   position: relative;
 }
 
-ul#menu-menu-reseaux  li > a {
+ul#menu-menu-home  li > a {
   position: relative;
   color: black;
   text-decoration: none;
 }
 
-ul#menu-menu-reseaux li > a::before {
+ul#menu-menu-home li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -98,12 +98,12 @@ ul#menu-menu-reseaux li > a::before {
   transition: all 0.2s ease-in-out 0s;
 }
 
-ul#menu-menu-reseaux li > a:hover::before {
+ul#menu-menu-home li > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
 
-ul#menu-menu-reseaux li{
+ul#menu-menu-home li{
   list-style-position: outside;
   white-space: nowrap;
   display: block;
@@ -577,10 +577,6 @@ div#temoignages h2{
   text-align: right;
 }
 
-footer{
-  margin-top: 5%;
-}
-
 footer h1{
   font-size: 50px;
 }
@@ -665,6 +661,10 @@ textarea.wpcf7-form-control {
   border-color: #DDBE1A;
 }
 
+.wpcf7 form.sent .wpcf7-response-output {/
+	border-color: #576E34;
+}
+
 p#text_form{
   font-size: 80%;
   font-weight: 200;
@@ -721,7 +721,7 @@ p#num_bouton{
   display: block;
   width: 90%;
   margin-right: 10%;
-  margin-top: 3%;
+  margin-top: 6%;
   text-align: right;
   font-weight: 800;
   font-size: 120%;
@@ -779,11 +779,20 @@ div#footer_gauche img{
   margin-bottom: auto;
 }
 
-div#footer_milieu{
+div#footer_milieu {
   width: 40%;
   display: flex;
+  flex-direction: column;
+  height: 80%;
+  display: block;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.footer_milieu_bas {
+  height: 50%;
+  width: 100%;
+  display: flex;
 }
 
 .carte_footer{
@@ -793,15 +802,6 @@ div#footer_milieu{
 
 .carte_footer p{
   width: 90%;
-}
-
-.footer_illu{
-  width: 50%;
-  display: block;
-  margin: ;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
 }
 
 .contacts_footer{
@@ -814,11 +814,18 @@ div#footer_milieu{
   height: 100%;
 }
 
-#tel_footer{
+#tel_footer {
+  margin: 0;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
   font-weight: 800;
 }
 
-#maps_footer{
+#maps_footer {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
   font-weight: 200;
 }
 
@@ -885,4 +892,19 @@ div#footer_droite{
 
 #barre_final a:hover{
   text-decoration: underline;
+}
+
+#footer_milieu_haut {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.footer_illu {
+  display: block;
+  width: 20%;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
 }
