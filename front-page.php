@@ -182,7 +182,7 @@
                 </div>
               </div>
             </div>
-            <div id="temoignages">
+            <div id="temoignages" style="background-color:<?php the_field('couleur_prin'); ?>;">
               <h2>Ils m'ont fait confiance</h2>
               <div class="carousel_temoignage">
               <?php

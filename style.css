@@ -28,18 +28,14 @@ p#nom-nav{
   width: 20%;
   font-size: 150%;
   line-height : 90%;
-  margin-top: auto;
-  margin-bottom: auto;
   color: #161616;
+  margin : auto 0;
 }
 
 img#logo-nav{
   width: 15%;
-  margin-left: 10%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 1%;
   display: block;
+  margin: auto 1% auto 10%;
 }
 
 #nav-gauche{
@@ -57,13 +53,10 @@ img#logo-nav{
   list-style-type: none;
   text-decoration: none;
   width: 100%;
-  margin-left: 25%;
   display: flex;
   align-items: center;
   height: 100%;
-  margin-top:0;
-  margin-bottom: 0;
-
+  margin: 0 0 0 25%;
 }
 
 #nav-droite > div:nth-child(1) a{
@@ -110,10 +103,7 @@ img#logo-nav{
   list-style-position: outside;
   white-space: nowrap;
   display: inline;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 5%;
 }
 
 div#dessous-nav{
@@ -258,8 +248,7 @@ div#vosprojets_droite{
 .vosprojets_image{
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .image_carousel{
@@ -267,8 +256,7 @@ div#vosprojets_droite{
 }
 
 .carte_carousel{
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -288,9 +276,7 @@ div#vosprojets_droite{
 .slick-dots {
 	display: flex;
 	justify-content: center;
-
 	list-style-type: none;
-
 }
 .slick-dots li {
 			margin: 0 0.25rem;
@@ -311,17 +297,16 @@ div#vosprojets_droite{
 }
 
 .slick-dots li.slick-active button {
-			background-color: #576E34;
-      opacity: 100;
-		}
-
+	background-color: #576E34;
+  opacity: 100;
+}
 
 .parent {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
 }
 
 .carousel_pergola{
@@ -417,8 +402,7 @@ div#video_pres video{
 img#splash_image{
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .div1_2 { grid-area: 1 / 1 / 2 / 2; }
@@ -450,8 +434,7 @@ div#texte_pres p{
 div#franck{
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -478,8 +461,7 @@ img#photo_fr{
 
 div#ma_plusvalue{
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
 }
 
 div#cartes_plusvalue{
@@ -489,8 +471,7 @@ div#cartes_plusvalue{
 
 .image_plusvalue {
   width: 42%;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
   display: block;
 }
 
@@ -518,9 +499,7 @@ div#bouton_contact_pres{
   width: 30%;
   transition: 0.3s;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
+  margin: 5% auto 0 auto;
   cursor: pointer;
 }
 
@@ -549,15 +528,12 @@ div#temoignages h2{
   width: 60%;
   padding-top: 3%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+  margin : 0 auto;
 }
 
 .carousel_temoignage{
   width: 60%;
-  margin-left:auto;
-  margin-right:auto;
+  margin : 0 auto;
   padding-bottom:3%;
 }
 
@@ -577,8 +553,7 @@ footer h1{
 div#me_contacter{
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
 }
 
 div#formulaire{
@@ -586,13 +561,12 @@ div#formulaire{
   margin-top: 5%;
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
 }
 
 div.wpcf7 {
-margin: 0;
-width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 .wpcf7-form-control-wrap {
@@ -602,7 +576,6 @@ width: 100%;
 
 textarea.wpcf7-form-control {
   width: 100%;
-  border: none;
   border: none;
   background-color: #C4CCB8;
   color: #576E34;
@@ -615,7 +588,6 @@ textarea.wpcf7-form-control {
 }
 
 .wpcf7-tel {
-  border: none;
   border: none;
   width: 100%;
   background-color: #C4CCB8;
@@ -635,7 +607,6 @@ textarea.wpcf7-form-control {
 }
 
 .your-name > input:nth-child(1) {
-  border: none;
   border: none;
   width: 100%;
   background-color: #C4CCB8;
@@ -667,8 +638,7 @@ p#text_form{
 
 div#appel{
   width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
   display: block;
   margin-top: 5%;
   position: relative;
@@ -710,8 +680,7 @@ div#partie_verte:hover{
 }
 
 p#num_bouton{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin : 10px 0;
 }
 
 #retour{
@@ -734,8 +703,7 @@ p#num_bouton{
 div#wrap-footer{
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
   display: flex;
 }
 
@@ -748,8 +716,7 @@ div#texte_pres_footer{
   display: flex;
   width: 50%;
   flex-direction: column;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin : auto 0;
 }
 
 p#nom_footer{
@@ -766,14 +733,12 @@ p#desc_footer{
   width: 100%;
   font-weight: 100;
   margin-top: 0;
-
 }
 
 div#footer_gauche img{
   width: 40%;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin : auto 0;
 }
 
 div#footer_milieu {
@@ -782,8 +747,7 @@ div#footer_milieu {
   flex-direction: column;
   height: 80%;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin : auto 0;
 }
 
 .footer_milieu_bas {
@@ -814,15 +778,13 @@ div#footer_milieu {
 #tel_footer {
   margin: 0;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin : auto 0;
   font-weight: 800;
 }
 
 #maps_footer {
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin : auto 0;
   font-weight: 200;
 }
 
@@ -830,9 +792,7 @@ div#footer_milieu {
   font-weight: 200;
   list-style-type: none;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-top: 20%;
+  margin : 20% 0 auto 0;
 }
 
 #menu_footer ul li a{
@@ -846,15 +806,12 @@ div#footer_milieu {
 
 #menu_footer ul li{
   text-align: right;
-  margin-top: 10%;
-  margin-bottom: 10%;
-
+  margin : 10% auto;
 }
 
 #menu_footer ul{
   list-style-type: none;
 }
-
 
 div#footer_droite{
   width: 30%;
@@ -865,7 +822,7 @@ div#footer_droite{
 }
 
 #barre_final{
-    text-align: center;
+  text-align: center;
 }
 
 #barre_final p {
@@ -882,8 +839,7 @@ div#footer_droite{
 #barre_footer{
   width: 40%;
   height: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0 auto;
   background-color: white;
 }
 
@@ -901,17 +857,15 @@ div#footer_droite{
   display: block;
   width: 20%;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 0;
+  margin : auto 0;
 }
 
 .menu_responsive {
-    position: fixed;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    left: -100%;
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  left: -100%;
 	line-height: 40%;
 	font-size: 80%;
 	z-index: 1000000000;
@@ -920,46 +874,47 @@ div#footer_droite{
 }
 
 .barres {
-    position: fixed;
-    right: 6.7%;
-    transform: translate(-50%, -50%);
-    height: 80px;
-    cursor: pointer;
-	  z-index: 1000000000000;
-	  top:7%;
+  position: fixed;
+  right: 6.7%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  cursor: pointer;
+  z-index: 1000000000000;
+  top:7%;
 }
+
 .hamburger:before{
 	background-color: black;
 }
 
 .hamburger {
-    width: 30px;
-    height: 2px;
-    background-color: black;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
 }
 
 .hamburger::before,
 .hamburger::after
 {
-    content: '';
-    position: fixed;
-    transition: 0.5s;
+  content: '';
+  position: fixed;
+  transition: 0.5s;
 	background-color: black;
 	width: 30px;
-    height: 2px;
+  height: 2px;
 }
 
 .barres.active .hamburger {
-    background-color: rgba(255, 255, 255, 0.001);
+  background-color: rgba(255, 255, 255, 0.001);
 }
 
 .hamburger::before {
-    top: -10px;
+  top: -10px;
 	background-color: black;
 }
 
@@ -970,24 +925,23 @@ div#footer_droite{
 
 /* MENU */
 
-
 .menu_responsive ul {
 	position: absolute;
-    transform: translate(-50%, -50%);
-    list-style: none;
-	margin-left: auto;
-	margin-right: auto;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin : 0 auto;
 	display: block;
 	left: 48%;
 	top: 29%;
 }
 
 .menu_responsive ul li {
-    padding-top: 30px;
+  padding-top: 30px;
 }
+
 .menu_responsive a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 	font-weight: 100;
 	text-align: center;
 	font-size: 200%;
@@ -998,14 +952,14 @@ div#footer_droite{
 /* Animation Barres */
 
 .barres.active .hamburger::before {
-    top: 0;
-    transform: rotate(135deg);
+  top: 0;
+  transform: rotate(135deg);
 	background-color: black;
 }
 
 .barres.active .hamburger::after {
-    top: 0;
-    transform: rotate(405deg);
+  top: 0;
+  transform: rotate(405deg);
 	background-color: black;
 }
 
