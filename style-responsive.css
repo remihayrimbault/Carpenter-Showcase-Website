@@ -12,7 +12,6 @@
   div.menu_responsive{
     display: block;
     left: -100%;
-
   }
 
   div#nav-droite ul{
@@ -38,7 +37,6 @@
     text-decoration: none;
     list-style-position: outside;
     width: 50%;
-    margin-left: 50%;
     display: flex;
     align-items:flex-end;
     height: 100%;
@@ -361,5 +359,234 @@
 }
 
 @media all and (max-width: 480px){
+
+  *{
+    left: 0;
+    top: 0;
+  }
+
+  div.barres {
+    top: 2.5%;
+  }
+
+  div#dessous-nav{
+    margin-top: 15%;
+  }
+
+  p#texte_header{
+    padding-top: 15%;
+    font-size: 115%;
+  }
+
+  div#premierepage_orange {
+  margin-top: 30%;
+  }
+
+  div#premierepage_orange p {
+    font-size: 65%;
+  }
+
+  div#premierepage_vert p {
+    margin: 3%;
+    font-size: 80%;
+  }
+
+  div#premierepage_vert {
+    margin-top: 56%;
+  }
+
+  div#wrap {
+    margin:0 auto 0;
+    width: 90%;
+  }
+
+  div#wrap h1 {
+    font-size: 30px;
+  }
+
+  div#vosprojets {
+    height: 90vh;
+    flex-direction: column;
+  }
+
+  div#vosprojets_divbarre {
+    width: 6%;
+    height: 100%;
+    display: none;
+  }
+
+  div#vosprojets_droite {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  div#vosprojets_gauche {
+    width: 100%;
+    height: 50%;
+  }
+
+  .parent2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
+  .div1_2 { grid-area: 1 / 1 / 2 / 2; }
+  .div2_2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3_2 { grid-area: 2 / 1 / 3 / 2; }
+  .div4_2 { grid-area: 2 / 2 / 3 / 3; }
+  .div5_2 { grid-area: 3 / 1 / 4 / 2; }
+  .div6_2 { grid-area: 3 / 2 / 4 / 3; }
+
+  div#presentation{
+    height: 108vh;
+  }
+
+  .div_galerie {
+    width: 150px;
+    height: 150px;
+  }
+
+  div#presentation-gauche{
+    margin-right: 0%;
+  }
+
+  div#texte_pres p{
+    font-size: 65%;
+  }
+
+  div#bouton_contact_pres p{
+    font-size: 100%;
+  }
+
+  div#bouton_contact_pres{
+    width: 50%;
+  }
+
+  div#texte_frank{
+    font-size: 65%;
+  }
+
+  div#franck{
+    width: 85%;
+  }
+
+  .carte_plusvalue{
+    width: 100%;
+    margin: 0%;
+  }
+
+  .image_plusvalue{
+    width: 35%;
+  }
+
+  .p_plusvalue{
+    font-size: 65%;
+  }
+
+  div#temoignages{
+    font-size: 65%;
+    margin-top: 5%;
+  }
+
+  div#cartes_plusvalue{
+    flex-direction: column;
+  }
+
+  p#text_form{
+    font-size: 65%;
+  }
+
+  #intro_form{
+    font-size: 83%;
+  }
+
+  div#partie_jaune p{
+    font-size: 81%;
+    margin: 2%;
+  }
+
+  div#partie_jaune{
+    height: 104px;
+    margin-top: 13%;
+  }
+
+  div#partie_verte{
+    top: 81px;
+    font-size: 84%;
+    width: 57%;
+    left: 22%;
+  }
+
+  p#desc_footer{
+    font-size: 10px;
+  }
+
+  div#footer_gauche img{
+    margin-left: 11%;
+  }
+
+  div#footer_droite{
+    display: none;
+  }
+
+  #barre_final{
+    font-size: 70%;
+  }
+
+  div#formulaire{
+    width: 80%;
+  }
+
+  div#me_contacter{
+    width: 90%;
+  }
+
+  #retour{
+    width: 95%;
+    margin-right: 5%;
+    font-size: 100%;
+    margin-top: 12%;
+  }
+
+  div#wrap-footer{
+    width: 90%;
+    flex-direction: column;
+  }
+
+  div#footer_gauche{
+    width: 100%;
+    height: 135px;
+  }
+
+  div#texte_pres_footer{
+    width: 74%;
+  }
+
+  div#footer_milieu {
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  font-size: 90%;
+  }
+
+  #barre_final p {
+  padding-bottom: 3%;
+  padding-top: 3%;
+  }
+
+  .footer_illu {
+  width: 15%;
+  }
+
+  #nom_footer {
+  margin-top: 15%;
+  }
+
+  #tel_footer {
+  font-size: 90%;
+  }
+
 
 }

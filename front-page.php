@@ -204,7 +204,7 @@
                 </div>
                 <div id="appel">
                   <div id="partie_verte">
-                    <p id="num_bouton"><?php the_field('telephone'); ?></p>
+                    <a href="tel:+33609089442"><p id="num_bouton"><?php the_field('telephone'); ?></p></a>
                   </div>
                   <div id="partie_jaune">
                     <p>Appelez-moi pour discuter de votre projet !</p>
