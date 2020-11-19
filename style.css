@@ -148,7 +148,6 @@ p#texte_header{
 
 div#premierepage_orange{
   width: 70%;
-  background: #DDBE1A;
   position: absolute;
   z-index: 20;
   margin-top: 35%;
@@ -158,7 +157,6 @@ div#premierepage_orange{
 
 div#premierepage_vert{
   width: 30%;
-  background: #576E34;
   position: absolute;
   z-index: 200;
   margin-top: 45%;
@@ -240,10 +238,8 @@ div#vosprojets_barre{
   width: 2px;
   height: 60%;
   margin: 150% auto 50%;
-  background: #576E34;
   vertical-align: center;
 }
-
 
 div#vosprojets_droite{
   width: 45%;
@@ -520,7 +516,6 @@ div#cartes_plusvalue{
 
 div#bouton_contact_pres{
   width: 30%;
-  background: #576E34;
   transition: 0.3s;
   display: block;
   margin-left: auto;
@@ -547,12 +542,6 @@ div#bouton_contact_pres p{
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-}
-
-div#temoignages{
-  width: 100%;
-  background: #DDBE1A;
-  position: relative;
 }
 
 div#temoignages h2{
@@ -593,6 +582,7 @@ div#me_contacter{
 }
 
 div#formulaire{
+  position: relative;
   margin-top: 5%;
   width: 50%;
   display: block;
@@ -686,7 +676,6 @@ div#appel{
 
 div#partie_jaune{
   text-align: center;
-  background: #DDBE1A;
   width: 100%;
   height: 150px;
 }
@@ -699,7 +688,6 @@ div#partie_jaune p{
 
 div#partie_verte{
   position: absolute;
-  background: #576E34;
   color: white;
   width: 40%;
   left: 30%;

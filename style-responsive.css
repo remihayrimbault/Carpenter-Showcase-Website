@@ -4,6 +4,10 @@
 
 @media all and (max-width: 768px){
 
+  #barre_final a{
+    text-decoration: underline;
+  }
+
   div.barres{
     display: block;
     top: 4%;

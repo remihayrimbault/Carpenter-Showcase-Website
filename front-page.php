@@ -1,7 +1,7 @@
           <?php get_header(); ?>
             <div id="dessous-nav">
-              <div id="premierepage_vert"><a href="#me_contacter"><p>Contactez-moi</p></a></div>
-                <div id="premierepage_orange"><p><?php the_field('texte_header'); ?></p></div>
+              <div id="premierepage_vert" style="background-color:<?php the_field('couleur_secon'); ?>;"><a href="#me_contacter"><p>Contactez-moi</p></a></div>
+                <div id="premierepage_orange" style="background-color:<?php the_field('couleur_prin'); ?>;"><p><?php the_field('texte_header'); ?></p></div>
                 <p id="texte_header"><?php echo get_bloginfo('description');?></p>
                 <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
             </div>
@@ -11,6 +11,37 @@
                 <div id="vosprojets">
                   <div id="vosprojets_gauche">
                     <div class="parent">
+                      <?php
+                        $i = 1;
+                        $selecteur_illus = get_field('selecteur_illus');
+                        foreach($selecteur_illus as $selecteur_illuss):
+                      ?>
+                        <?php $nom = $selecteur_illuss['titre_selecteur'];?>
+                        <div class="div<?php echo($i); ?>" onclick="active_carte(<?php echo($nom); ?>)">
+                          <?php if ($i==5){
+                            echo ("<div id='$nom' class='vosprojets_carte actif'>");
+                          }
+                          else {
+                            echo ("<div id='$nom' class='vosprojets_carte'>");
+                          }
+                          ?>
+                            <img class="vosprojets_image" src="<?php echo($selecteur_illuss['image_selecteur']);?>" alt="illustration">
+                            <?php
+                              if (($selecteur_illuss['titre_selecteur'])=="abris"){
+                                echo "<p>Abris de jardin</p>";
+                              }
+                              else {
+                                echo "<p style='text-transform: capitalize;'>".$selecteur_illuss['titre_selecteur']."</p>";
+                              }
+                            ?>
+                            </div>
+                          </div>
+                      <?php
+                        $i++;
+                        endforeach;
+                      ?>
+                        </div>
+                      <!--
                       <div class="div1" onclick="active_carte(charpente);">
                         <div class="vosprojets_carte" id="charpente">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/charpente.png'" alt="illustration">
@@ -36,7 +67,7 @@
                         </div>
                       </div>
                       <div class="div5" onclick="active_carte(pergola);">
-                        <div class="vosprojets_carte active" id="pergola">
+                        <div class="vosprojets_carte actif" id="pergola">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
                           <p>Pergola</p>
                         </div>
@@ -65,9 +96,9 @@
                           <p>Plus</p>
                         </div>
                       </div>
-                    </div>
+                    </div>-->
                   </div>
-                  <div id="vosprojets_divbarre"><div id="vosprojets_barre"></div></div>
+                  <div id="vosprojets_divbarre"><div id="vosprojets_barre" style="background-color:<?php the_field('couleur_secon'); ?>;"></div></div>
                   <div id="vosprojets_droite">
                     <div class="carousel_pergola">
                       <?php
@@ -148,9 +179,9 @@
                   <div id="presentation-droite">
                     <div id="texte_pres">
                       <p><?php the_field('texte_projet'); ?></p>
-                      <div id="video_pres"><video src="<?php bloginfo('template_directory') ?>/video_pres.mp4" controls preload="true"></video></div>
+                      <div id="video_pres"><video src="<?php the_field('video_pres'); ?>" controls preload="true"></video></div>
                     </div>
-                    <div id="bouton_contact_pres">
+                    <div id="bouton_contact_pres" style="background-color:<?php the_field('couleur_secon'); ?>;">
                       <a href="#me_contacter"><p>Me contacter</p></a>
                     </div>
                   </div>
@@ -203,10 +234,10 @@
                     echo do_shortcode($contact);?>
                 </div>
                 <div id="appel">
-                  <div id="partie_verte">
+                  <div id="partie_verte" style="background-color:<?php the_field('couleur_secon'); ?>;">
                     <a href="tel:+33609089442"><p id="num_bouton"><?php the_field('telephone'); ?></p></a>
                   </div>
-                  <div id="partie_jaune">
+                  <div id="partie_jaune" style="background-color:<?php the_field('couleur_prin'); ?>;">
                     <p>Appelez-moi pour discuter de votre projet !</p>
                   </div>
                 </div>
