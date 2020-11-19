@@ -441,7 +441,7 @@
   .div6_2 { grid-area: 3 / 2 / 4 / 3; }
 
   div#presentation{
-    height: 116vh;
+    height: auto;
   }
 
   .div_galerie {
