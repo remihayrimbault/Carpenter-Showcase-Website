@@ -187,11 +187,6 @@ div#premierepage_vert p{
  text-decoration: none;
 }
 
-
-span.bold{
-  font-weight: 500;
-}
-
 div#premierepage_orange p{
   margin: 4% 10% 5% 10%;
   font-size: 120%;
@@ -260,7 +255,7 @@ div#vosprojets_droite{
   opacity: 30%;
 }
 
-.vosprojets_carte.active{
+.vosprojets_carte.actif{
   opacity: 100%;
 }
 
@@ -996,7 +991,7 @@ div#footer_droite{
 	margin-right: auto;
 	display: block;
 	left: 48%;
-	top: 40%;
+	top: 29%;
 }
 
 .menu_responsive ul li {
@@ -1007,7 +1002,9 @@ div#footer_droite{
     color: black;
 	font-weight: 100;
 	text-align: center;
-	font-size: 280%;
+	font-size: 200%;
+  display: block;
+  margin: 10% auto;
 }
 
 /* Animation Barres */

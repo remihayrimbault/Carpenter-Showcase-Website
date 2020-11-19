@@ -7,6 +7,8 @@
   div.barres{
     display: block;
     top: 4%;
+    width: 25px;
+    right: 3%;
   }
 
   div.menu_responsive{
@@ -32,20 +34,20 @@
   }
 
 
-  ul#menu-menu-home{
+  div.menu_responsive > ul{
     list-style-type: none;
     text-decoration: none;
     list-style-position: outside;
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-items:flex-end;
     height: 100%;
-    margin-top:0;
-    margin-bottom: 0;
-
+    margin-top:34%;
+    flex-direction: none;
+    text-align: center;
+    font-size: 200%;
   }
 
-  ul#menu-menu-home a{
+  div.menu_responsive > ul a{
     text-decoration: none;
     list-style-position: outside;
     white-space: nowrap;
@@ -56,13 +58,13 @@
     position: relative;
   }
 
-  ul#menu-menu-home  li > a {
+  div.menu_responsive > ul > li > a {
     position: relative;
     color: black;
     text-decoration: none;
   }
 
-  ul#menu-menu-home li > a::before {
+  div.menu_responsive > ul > li > a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -76,19 +78,16 @@
     transition: all 0.2s ease-in-out 0s;
   }
 
-  ul#menu-menu-home li > a:hover::before {
+  div.menu_responsive > ul > li > a:hover::before {
     visibility: visible;
     transform: scaleX(1);
   }
 
-  ul#menu-menu-home li{
+  div.menu_responsive > ul > li{
     list-style-position: outside;
     white-space: nowrap;
     display: block;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: auto;
-    margin-bottom: auto;
+
   }
 
   div#dessous-nav{
@@ -591,6 +590,14 @@
 
   .slick-dots {
   top: 110%;
+  }
+
+  .menu_responsive a {
+  font-size: 160%;
+  }
+
+  .menu_responsive ul {
+    left: 46%;
   }
 
 }
