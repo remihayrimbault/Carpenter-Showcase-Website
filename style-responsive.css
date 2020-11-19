@@ -406,7 +406,7 @@
   }
 
   div#vosprojets {
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
   }
 
@@ -441,7 +441,7 @@
   .div6_2 { grid-area: 3 / 2 / 4 / 3; }
 
   div#presentation{
-    height: 108vh;
+    height: 116vh;
   }
 
   .div_galerie {
