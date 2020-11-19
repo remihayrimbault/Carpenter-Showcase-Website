@@ -366,7 +366,8 @@
   }
 
   div.barres {
-    top: 2.5%;
+    top: 4%;
+    left: 90%;
   }
 
   div#dessous-nav{
@@ -588,5 +589,8 @@
   font-size: 90%;
   }
 
+  .slick-dots {
+  top: 110%;
+  }
 
 }
