@@ -11,37 +11,6 @@
                 <div id="vosprojets">
                   <div id="vosprojets_gauche">
                     <div class="parent">
-                      <?php
-                        $i = 1;
-                        $selecteur_illus = get_field('selecteur_illus');
-                        foreach($selecteur_illus as $selecteur_illuss):
-                      ?>
-                        <?php $nom = $selecteur_illuss['titre_selecteur'];?>
-                        <div class="div<?php echo($i); ?>" onclick="active_carte(<?php echo($nom); ?>)">
-                          <?php if ($i==5){
-                            echo ("<div id='$nom' class='vosprojets_carte actif'>");
-                          }
-                          else {
-                            echo ("<div id='$nom' class='vosprojets_carte'>");
-                          }
-                          ?>
-                            <img class="vosprojets_image" src="<?php echo($selecteur_illuss['image_selecteur']);?>" alt="illustration">
-                            <?php
-                              if (($selecteur_illuss['titre_selecteur'])=="abris"){
-                                echo "<p>Abris de jardin</p>";
-                              }
-                              else {
-                                echo "<p style='text-transform: capitalize;'>".$selecteur_illuss['titre_selecteur']."</p>";
-                              }
-                            ?>
-                            </div>
-                          </div>
-                      <?php
-                        $i++;
-                        endforeach;
-                      ?>
-                        </div>
-                      <!--
                       <div class="div1" onclick="active_carte(charpente);">
                         <div class="vosprojets_carte" id="charpente">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/charpente.png'" alt="illustration">
@@ -96,7 +65,7 @@
                           <p>Plus</p>
                         </div>
                       </div>
-                    </div>-->
+                    </div>
                   </div>
                   <div id="vosprojets_divbarre"><div id="vosprojets_barre" style="background-color:<?php the_field('couleur_secon'); ?>;"></div></div>
                   <div id="vosprojets_droite">
