@@ -33,24 +33,3 @@ function active_carte($nom) {
     $(".carousel_"+$idStr).css('display', 'block');
     $(".carousel_"+$idStr).slick('refresh');
 };
-
-     // Toggle Icone hamburger
-            $('.barres').click(function(){
-                $(this).toggleClass('active');
-            });
-
-    	var $hamburger = $('.barres');
-
-    	var hamburgerMotion = new TimelineMax()
-    	.to(".menu_responsive", 1.2, {left: '0%',ease: Expo.easeInOut,})
-    	.staggerFrom(".menu_responsive > ul > li", 0.5, {x: -100, opacity: 0}, 0.1)
-    	.reverse()
-
-    	$hamburger.on('click', function(e) {
-      		hamburgerMotion.reversed(!hamburgerMotion.reversed());
-    	});
-
-      $('.menu_responsive a').on('click', function(){
-    		hamburgerMotion.reversed(!hamburgerMotion.reversed());
-    		$('.barres').toggleClass('active');
-    	})
