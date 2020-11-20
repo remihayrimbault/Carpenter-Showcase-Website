@@ -44,7 +44,7 @@
                       <div class="div6" onclick="active_carte(sauna);">
                         <div class="vosprojets_carte" id="sauna">
                           <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/sauna.png'" alt="illustration">
-                          <p>Sauna extérieur</p>
+                          <p>Sauna</p>
                         </div>
                       </div>
                       <div class="div7" onclick="active_carte(abris);">
