@@ -970,3 +970,7 @@ div.barres{
 div.menu_responsive{
   display: none;
 }
+
+div#me_contacter h1{
+  font-size: 50px;
+}
