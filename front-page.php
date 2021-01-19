@@ -1,7 +1,7 @@
           <?php get_header(); ?>
             <div id="dessous-nav">
               <div id="premierepage_vert" style="background-color:<?php the_field('couleur_secon'); ?>;"><a href="#me_contacter"><p>Contactez-moi</p></a></div>
-                <div id="premierepage_orange" style="background-color:<?php the_field('couleur_prin'); ?>;"><p><?php the_field('texte_header'); ?></p></div>
+                <div id="premierepage_orange"><p><?php the_field('texte_header'); ?></p></div>
                 <p id="texte_header"><?php echo get_bloginfo('description');?></p>
                 <div id="video_header"><video src="<?php if( get_field('video_fond') ): ?><?php the_field('video_fond'); ?><?php endif; ?>" autoplay loop muted></video></div><!--<div id="jai_un_background" style=" background-image: url("<?php if( get_field('image_fond') ): ?><?php the_field('image_fond'); ?><?php endif; ?>") ; ">-->
             </div>
@@ -13,56 +13,56 @@
                     <div class="parent">
                       <div class="div1" onclick="active_carte(charpente);">
                         <div class="vosprojets_carte" id="charpente">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/charpente.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/charpente.png'" alt="illustration de charpente">
                           <p>Charpente</p>
                         </div>
                       </div>
                       <div class="div2" onclick="active_carte(cabane);">
                         <div class="vosprojets_carte" id="cabane">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/cabane.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/cabane.png'" alt="illustration de cabane">
                           <p>Cabane</p>
                         </div>
                       </div>
                       <div class="div3" onclick="active_carte(extension);">
                         <div class="vosprojets_carte" id="extension">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/extension.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/extension.png'" alt="illustration d'extension">
                           <p>Extension</p>
                         </div>
                       </div>
                       <div class="div4" onclick="active_carte(mezzanine);">
                         <div class="vosprojets_carte" id="mezzanine">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/mezzanine.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/mezzanine.png'" alt="illustration de mezzanine">
                           <p>Mezzanine</p>
                         </div>
                       </div>
                       <div class="div5" onclick="active_carte(pergola);">
                         <div class="vosprojets_carte actif" id="pergola">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/pergola.png'" alt="illustration de pergola">
                           <p>Pergola</p>
                         </div>
                       </div>
                       <div class="div6" onclick="active_carte(sauna);">
                         <div class="vosprojets_carte" id="sauna">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/sauna.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/sauna.png'" alt="illustration de sauna">
                           <p>Sauna</p>
                         </div>
                       </div>
                       <div class="div7" onclick="active_carte(abris);">
                         <div class="vosprojets_carte" id="abris">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/abris.png'" alt="illustration">
-                          <p>Abris de jardin</p>
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/abris.png'" alt="illustration d'abri de jardin">
+                          <p>Abri de jardin</p>
                         </div>
                       </div>
                       <div class="div8" onclick="active_carte(terrasse);">
                         <div class="vosprojets_carte" id="terrasse">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/terrasse.png'" alt="illustration">
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/terrasse.png'" alt="illustration de terrasse">
                           <p>Terrasse</p>
                         </div>
                       </div>
                       <div class="div9" onclick="active_carte(plus);">
                         <div class="vosprojets_carte" class="vosprojets_carte" id="plus">
-                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/plus.png'" alt="illustration">
-                          <p>Plus</p>
+                          <img class="vosprojets_image" src="<?php bloginfo('template_directory') ?>/images/plus.png'" alt="illustration d'un plus">
+                          <p>Autres</p>
                         </div>
                       </div>
                     </div>
@@ -162,9 +162,7 @@
                   <div id="texte_frank">
                     <p><?php the_field('texte_pres'); ?></p>
                   </div>
-                  <div id="photo_frank">
-                    <img id="photo_fr" src="<?php the_field('photo_frank'); ?>" alt="Photo de moi">
-                  </div>
+                    <img id="photo_fr" src="<?php the_field('photo_frank'); ?>" alt="Photo de Franck Donsimoni">
                 </div>
                 <div id="ma_plusvalue">
                   <h2>Ma plus-value</h2>
@@ -174,7 +172,7 @@
                       foreach($plus_value as $plus_values):  ?>
                         <div class="carte_plusvalue">
                           <h3 class="h_plusvalue"><?php echo($plus_values['titre']);?></h3>
-                          <img class="image_plusvalue" src="<?php echo($plus_values['image']);?>" alt="illustration">
+                          <img class="image_plusvalue" src="<?php echo($plus_values['image']);?>" alt="illustration des plus values">
                           <p class="p_plusvalue"><?php echo($plus_values['description']);?></p>
                         </div>
                     <?php endforeach; ?>
@@ -206,7 +204,7 @@
                   <div id="partie_verte" style="background-color:<?php the_field('couleur_secon'); ?>;">
                     <a href="tel:+33609089442"><p id="num_bouton"><?php the_field('telephone'); ?></p></a>
                   </div>
-                  <div id="partie_jaune" style="background-color:<?php the_field('couleur_prin'); ?>;">
+                  <div id="partie_jaune">
                     <p>Appelez-moi pour discuter de votre projet !</p>
                   </div>
                 </div>

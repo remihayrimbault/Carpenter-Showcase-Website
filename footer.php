@@ -2,7 +2,7 @@
 <div id="barre_de_fin">
 	<div id="wrap-footer">
 		<div id="footer_gauche">
-			<img id="logo-footer" src="<?php the_field('logo_frank'); ?>" alt="Logo"/>
+			<img id="logo-footer" src="<?php the_field('logo_frank'); ?>" alt="Logo de Franck Donsimoni"/>
 			<div id="texte_pres_footer">
 				<p id="nom_footer"><?php echo get_bloginfo('name'); ?></p>
 				<p id="desc_footer">Artisan Charpentier <br> Bassin Chambérien<p>
@@ -10,11 +10,11 @@
 		</div>
 		<div id="footer_milieu">
 			<div id="footer_milieu_haut">
-				<img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/phone.png'" alt="illustration">
+				<img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/phone.png'" alt="illustration d'un téléphone">
 				<p id="tel_footer"><?php the_field('telephone'); ?></p>
 			</div>
 			<div class="footer_milieu_bas">
-				<img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/maps.png'" alt="illustration">
+				<img class="footer_illu" src="<?php bloginfo('template_directory') ?>/images/maps.png'" alt="illustration d'icone position">
 				<p id="maps_footer" ><?php the_field('adresse'); ?></p>
 			</div>
 		</div>

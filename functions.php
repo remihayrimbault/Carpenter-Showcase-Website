@@ -10,7 +10,7 @@ function wpdocs_theme_name_scripts() {
 
 	wp_enqueue_style('reset', '/css/reset.css');
 
-	wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+	wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 	wp_enqueue_style('slick', get_template_directory_uri() . '/css/slick.css');
 

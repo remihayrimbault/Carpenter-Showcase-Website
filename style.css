@@ -12,7 +12,7 @@ body{
   box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
   display: flex;
   width: 100%;
-  height: 14vh;
+  height: 10vh;
   position: fixed;
   background: white;
   margin: 0;
@@ -25,17 +25,17 @@ body{
 p#nom-nav{
   font-weight: 500;
   display: block;
-  width: 20%;
-  font-size: 150%;
+  width: 50%;
+  font-size: 200%;
   line-height : 90%;
   color: #161616;
   margin : auto 0;
 }
 
 img#logo-nav{
-  width: 15%;
+  width: 10%;
   display: block;
-  margin: auto 1% auto 10%;
+  margin: auto 2% auto 10%;
 }
 
 #nav-gauche{
@@ -142,15 +142,16 @@ div#premierepage_orange{
   z-index: 20;
   margin-top: 35%;
   left: 15%;
+  background: url("bois.png");
   color: #161616;
 }
 
 div#premierepage_vert{
-  width: 30%;
+  width: 17%;
   position: absolute;
   z-index: 200;
   margin-top: 45%;
-  left: 35%;
+  left: 41%;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -163,7 +164,7 @@ div#premierepage_vert:hover{
 }
 
 div#premierepage_vert p{
-  margin: 3%;
+  margin: 4%;
   font-size: 130%;
   font-weight: 500;
   text-align: center;
@@ -178,13 +179,13 @@ div#premierepage_vert p{
 div#premierepage_orange p{
   margin: 4% 10% 5% 10%;
   font-size: 120%;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   line-height: 130%;
 }
 
 div#wrap{
-  margin:0 auto 0;
+  margin: 5% auto 0;
   width: 80%;
 }
 
@@ -368,6 +369,7 @@ div#presentation{
   width: 100%;
   height: 90vh;
   display: flex;
+  margin-top: 5%;
 }
 
 div#presentation-gauche{
@@ -431,6 +433,11 @@ div#texte_pres p{
   font-size: 110%;
 }
 
+#quisuisje
+{
+  margin-top: 5%;
+}
+
 div#franck{
   width: 80%;
   display: block;
@@ -444,24 +451,16 @@ div#texte_frank{
   font-size: 110%;
 }
 
-div#photo_frank{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  height: 270px;
-  margin-left: 15%;
-  width: 580px;
-}
-
 img#photo_fr{
   display: block;
   margin: auto;
-  width: 100%;
+  width: 33%;
+  margin-left: 10%;
 }
 
 div#ma_plusvalue{
   width: 80%;
-  margin : 0 auto;
+  margin : 5% auto 0;
 }
 
 div#cartes_plusvalue{
@@ -523,6 +522,10 @@ div#bouton_contact_pres p{
   text-decoration: none;
 }
 
+#temoignages{
+  margin-top: 5%;
+}
+
 div#temoignages h2{
   font-size: 35px;
   width: 60%;
@@ -544,6 +547,13 @@ div#temoignages h2{
 .temoignage_auteur {
   font-weight: 800;
   text-align: right;
+}
+
+.carte_temoignage{
+  width: 80%;
+display: block;
+margin: 0 auto;
+}
 }
 
 footer h1{
@@ -648,6 +658,7 @@ div#partie_jaune{
   text-align: center;
   width: 100%;
   height: 150px;
+  background: url("bois.png");
 }
 
 div#partie_jaune p{
@@ -716,7 +727,7 @@ div#texte_pres_footer{
   display: flex;
   width: 50%;
   flex-direction: column;
-  margin : auto 0;
+  margin: 0 0 0 2%;
 }
 
 p#nom_footer{
@@ -736,7 +747,7 @@ p#desc_footer{
 }
 
 div#footer_gauche img{
-  width: 40%;
+  width: 23%;
   display: block;
   margin : auto 0;
 }
