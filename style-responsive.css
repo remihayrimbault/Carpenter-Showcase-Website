@@ -9,7 +9,7 @@
 }
 
 h1#nom-nav {
-  font-size: 180%;
+  font-size: 150%;
 }
 
 img#logo-nav {
@@ -202,11 +202,11 @@ div#presentation-droite{
     width: 80%;
   }
 
-  div#wrap h1{
+  div#wrap h2{
     font-size: 35px;
   }
 
-  div#wrap h2{
+  div#wrap h3{
     font-size: 25px;
   }
 
@@ -333,7 +333,7 @@ div#presentation-droite{
     font-size: 83%;
   }
 
-  div#temoignages h2{
+  div#temoignages h3{
     font-size: 25px;
   }
 
@@ -432,8 +432,16 @@ div#presentation-droite{
     width: 90%;
   }
 
-  div#wrap h1 {
+  h2 {
+    font-size: 35px;
+  }
+
+  div#wrap h3 {
     font-size: 30px;
+  }
+
+  div#wrap h4 {
+    font-size: 25px;
   }
 
   div#vosprojets {
@@ -631,5 +639,37 @@ div#presentation-droite{
   .menu_responsive ul {
     left: 46%;
   }
+  img#logo-nav {
+    width: 65%;
+}
+
+  h1#nom-nav {
+    font-size: 150%;
+  }
+#quote2 {
+  left: 82%;
+}
+
+div#premierepage_vert {
+  width: 40%;
+  left: 30%;
+  }
+
+  div#footer_gauche img {
+    width: 30%;
+  }
+
+  div#me_contacter h2 {
+    font-size: 35px;
+  }
+
+  #quisuisje {
+    margin-top: 15%;
+  }
+  div#temoignages {
+    margin-top: 10%;
+  }
+
+
 
 }

@@ -198,6 +198,12 @@ div#wrap h3{
   margin:0;
 }
 
+div#wrap h4{
+  font-size: 30px;
+  margin:0;
+}
+
+
 div#realisations{
   margin-top: 50vh;
 }
@@ -229,7 +235,6 @@ div#vosprojets_barre{
   width: 2px;
   height: 60%;
   margin: 150% auto 50%;
-  vertical-align: center;
 }
 
 div#vosprojets_droite{
@@ -573,7 +578,6 @@ div#temoignages h3{
 display: block;
 margin: 0 auto;
 }
-}
 
 footer h2{
   font-size: 50px;
@@ -659,7 +663,7 @@ textarea.wpcf7-form-control {
   border-color: #DDBE1A;
 }
 
-.wpcf7 form.sent .wpcf7-response-output {/
+.wpcf7 form.sent .wpcf7-response-output {
 	border-color: #576E34;
 }
 

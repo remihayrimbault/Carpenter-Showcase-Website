@@ -171,7 +171,7 @@
                       $plus_value = get_field('plus_value');
                       foreach($plus_value as $plus_values):  ?>
                         <div class="carte_plusvalue">
-                          <h3 class="h_plusvalue"><?php echo($plus_values['titre']);?></h3>
+                          <h4 class="h_plusvalue"><?php echo($plus_values['titre']);?></h4>
                           <img class="image_plusvalue" src="<?php echo($plus_values['image']);?>" alt="illustration des plus values">
                           <p class="p_plusvalue"><?php echo($plus_values['description']);?></p>
                         </div>
