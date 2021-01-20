@@ -26,7 +26,7 @@
 	</div>
 	<div id="barre_final">
 		<div id="barre_footer"></div>
-		<p>Réalisé par l’agence <a href="#">La Cabane</a></p>
+		<p>Réalisé par l’agence <a href="https://krosnoz.fr/Cabane/" target="_blank">La Cabane</a></p>
 	</div>
 </div>
 </footer>
@@ -134,6 +134,38 @@ $('.carousel_charpente').slick({
 	 $('.barres').toggleClass('active');
  });
 </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "HomeAndConstructionBusiness",
+    "image": [
+      "<?php echo get_template_directory_uri(). '/images/thumbnail1.jpg'; ?>",
+      "<?php echo get_template_directory_uri(). '/images/thumbnail2.jpg'; ?>",
+      "<?php echo get_template_directory_uri(). '/images/thumbnail3.jpg'; ?>"
+     ],
+    "@id": "<?php echo site_url(); ?>",
+    "name": "Franck Donsimoni: Artisan Charpentier",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Rue de Stalingrad",
+      "addressLocality": "Chambéry",
+      "addressRegion": "Savoie",
+      "postalCode": "73000",
+      "addressCountry": "FR"
+    },
+      "author": {
+        "@type": "Person",
+        "name": "Franck Donsimoni"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.761293,
+      "longitude": 5.921313
+    },
+    "url": "<?php echo site_url(); ?>",
+    "telephone": "0609089442"
+  }
+  </script>
 <?php wp_footer(); ?>
 </body>
 

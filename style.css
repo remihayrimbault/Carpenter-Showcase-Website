@@ -22,10 +22,10 @@ body{
   left: 0;
 }
 
-p#nom-nav{
+h1#nom-nav{
   font-weight: 500;
   display: block;
-  width: 50%;
+  width: 80%;
   font-size: 200%;
   line-height : 90%;
   color: #161616;
@@ -33,7 +33,7 @@ p#nom-nav{
 }
 
 img#logo-nav{
-  width: 10%;
+  width: 12%;
   display: block;
   margin: auto 2% auto 10%;
 }
@@ -44,7 +44,7 @@ img#logo-nav{
 }
 
 #nav-droite{
-  width: 50%;
+  width: 60%;
   display: flex;
 
 }
@@ -189,11 +189,11 @@ div#wrap{
   width: 80%;
 }
 
-div#wrap h1{
+div#wrap h2{
   font-size: 50px;
 }
 
-div#wrap h2{
+div#wrap h3{
   font-size: 35px;
   margin:0;
 }
@@ -524,9 +524,28 @@ div#bouton_contact_pres p{
 
 #temoignages{
   margin-top: 5%;
+  position: relative;
 }
 
-div#temoignages h2{
+#quote1 {
+  position: absolute;
+  z-index: 10;
+  width: 3%;
+  left: 15%;
+  top: 30%;
+}
+
+#quote2 {
+  position: absolute;
+  z-index: 10;
+  transform: scaleX(-1);
+  width: 3%;
+  right: 15%;
+  top: 65%;
+}
+
+
+div#temoignages h3{
   font-size: 35px;
   width: 60%;
   padding-top: 3%;
@@ -556,7 +575,7 @@ margin: 0 auto;
 }
 }
 
-footer h1{
+footer h2{
   font-size: 50px;
 }
 
@@ -595,6 +614,7 @@ textarea.wpcf7-form-control {
   padding-top: 2%;
   font-size: 14px;
   height: 80px;
+  padding-left: 2%;
 }
 
 .wpcf7-tel {
@@ -605,6 +625,7 @@ textarea.wpcf7-form-control {
   padding-bottom: 2%;
   padding-top: 2%;
   font-size: 14px;
+  padding-left: 2%;
 }
 
 .wpcf7-submit {
@@ -614,6 +635,7 @@ textarea.wpcf7-form-control {
   font-size: 14px;
   padding: 2%;
   margin: 0;
+  padding-left: 2%;
 }
 
 .your-name > input:nth-child(1) {
@@ -624,6 +646,7 @@ textarea.wpcf7-form-control {
   padding-bottom: 2%;
   padding-top: 2%;
   font-size: 14px;
+  padding-left: 2%;
 }
 
 #intro_form{
@@ -803,7 +826,8 @@ div#footer_milieu {
   font-weight: 200;
   list-style-type: none;
   display: block;
-  margin : 20% 0 auto 0;
+  margin-top: 15%;
+  margin-left: 15%;
 }
 
 #menu_footer ul li a{
@@ -816,7 +840,7 @@ div#footer_milieu {
 }
 
 #menu_footer ul li{
-  text-align: right;
+  text-align: left;
   margin : 10% auto;
 }
 
@@ -982,6 +1006,6 @@ div.menu_responsive{
   display: none;
 }
 
-div#me_contacter h1{
+div#me_contacter h2{
   font-size: 50px;
 }

@@ -7,7 +7,7 @@
             </div>
             <div id="wrap">
               <div id="realisations">
-                <h1>Vos projets</h1>
+                <h2>Vos projets</h1>
                 <div id="vosprojets">
                   <div id="vosprojets_gauche">
                     <div class="parent">
@@ -157,7 +157,7 @@
                 </div>
               </div>
               <div id="quisuisje">
-                <h1>Qui suis-je ?</h1>
+                <h2>Qui suis-je ?</h1>
                 <div id="franck">
                   <div id="texte_frank">
                     <p><?php the_field('texte_pres'); ?></p>
@@ -165,7 +165,7 @@
                     <img id="photo_fr" src="<?php the_field('photo_frank'); ?>" alt="Photo de Franck Donsimoni">
                 </div>
                 <div id="ma_plusvalue">
-                  <h2>Ma plus-value</h2>
+                  <h3>Ma plus-value</h2>
                   <div id="cartes_plusvalue">
                     <?php
                       $plus_value = get_field('plus_value');
@@ -181,7 +181,9 @@
               </div>
             </div>
             <div id="temoignages" style="background-color:<?php the_field('couleur_prin'); ?>;">
-              <h2>Ils m'ont fait confiance</h2>
+              <h3>Ils m'ont fait confiance</h2>
+              <img id="quote1" src="<?php echo get_template_directory_uri(). '/images/quote.png'; ?>" alt="">
+              <img id="quote2" src="<?php echo get_template_directory_uri(). '/images/quote.png'; ?>" alt="">
               <div class="carousel_temoignage">
               <?php
                 $temoignage = get_field('temoignage');
@@ -194,7 +196,7 @@
               </div>
             </div>
               <div id="me_contacter">
-                <h1>Me contacter</h1>
+                <h2>Me contacter</h1>
                 <div id="formulaire">
                   <p id="intro_form">Exprimez vos envies et je vous rappelle.</p>
                   <?php $contact='[contact-form-7 id="101" title="Contact"]';
