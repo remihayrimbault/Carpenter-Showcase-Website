@@ -108,6 +108,7 @@ img#logo-nav{
 
 div#dessous-nav{
   position: relative;
+  height: 100vh;
 }
 
 div#video_header{
@@ -179,7 +180,7 @@ div#premierepage_vert p{
 div#premierepage_orange p{
   margin: 4% 10% 5% 10%;
   font-size: 120%;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   line-height: 130%;
 }
@@ -205,7 +206,7 @@ div#wrap h4{
 
 
 div#realisations{
-  margin-top: 50vh;
+  height: 225vh;
 }
 
 div#vosprojets{
@@ -434,7 +435,7 @@ img#splash_image{
 
 div#texte_pres p{
   width: 100%;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 110%;
 }
 
@@ -452,7 +453,7 @@ div#franck{
 
 div#texte_frank{
   width: 80%;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 110%;
 }
 
@@ -490,7 +491,7 @@ div#cartes_plusvalue{
 }
 
 .p_plusvalue {
-  font-weight: 200;
+  font-weight: 400;
   margin-top: 10%;
 }
 
@@ -565,7 +566,7 @@ div#temoignages h3{
 }
 
 .temoignage_texte {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .temoignage_auteur {
@@ -734,7 +735,8 @@ p#num_bouton{
 }
 
 #barre_de_fin{
-  background: black;
+  background: #161616;
+  ;
   color: white;
 }
 
@@ -761,8 +763,9 @@ p#nom_footer{
   display: block;
   width: 100%;
   font-weight: 800;
-  margin-bottom: 2%;
-  font-size: 30px;
+  margin-bottom: 0%;
+  font-size: 26px;
+  margin-top: 12%;
 }
 
 p#desc_footer{
@@ -774,7 +777,7 @@ p#desc_footer{
 }
 
 div#footer_gauche img{
-  width: 23%;
+  width: 25%;
   display: block;
   margin : auto 0;
 }
@@ -1013,3 +1016,8 @@ div.menu_responsive{
 div#me_contacter h2{
   font-size: 50px;
 }
+
+div.slick-list:nth-child(1) > div:nth-child(1) {
+  margin-top: 1%;
+ }
+ 

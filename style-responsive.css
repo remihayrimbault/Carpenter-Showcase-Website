@@ -68,10 +68,16 @@ div#presentation-droite{
   margin-top: 25%;
 }
 
-
+  #quisuisje {
+    margin-top: 55%;
 }
 
-@media all and (max-width: 768px){
+div#realisations {
+  margin-top: 30vh;
+}
+
+
+
 
   #barre_final a{
     text-decoration: underline;
@@ -211,7 +217,7 @@ div#presentation-droite{
   }
 
   div#realisations{
-    margin-top: 14vh;
+    margin-top: 20vh;
   }
 
   div#vosprojets{
@@ -670,6 +676,16 @@ div#premierepage_vert {
     margin-top: 10%;
   }
 
+  div#realisations {
+    margin-top: 0;
+  }
 
+div#dessous-nav {
+  height: 33vh;
+}
+
+div#realisations {
+  height: 215vh;
+}
 
 }
