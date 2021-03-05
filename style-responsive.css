@@ -687,5 +687,11 @@ div#dessous-nav {
 div#realisations {
   height: 215vh;
 }
+.page > h2 {
+  font-size: 30px;
+}
 
+.page > p > strong {
+  font-size: 15px;
+}
 }

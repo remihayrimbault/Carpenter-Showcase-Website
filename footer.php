@@ -26,7 +26,9 @@
 	</div>
 	<div id="barre_final">
 		<div id="barre_footer"></div>
-		<p>Réalisé par l’agence <a href="https://krosnoz.fr/Cabane/" target="_blank">La Cabane</a></p>
+		<p><a href="
+<?php echo(get_permalink(get_page_by_path('credits')));?>" target="_blank">Crédits</a> - <a href="
+<?php echo(get_permalink(get_page_by_path('mentions-legales')));?>" target="_blank">Mentions légales</a></p>
 	</div>
 </div>
 </footer>
